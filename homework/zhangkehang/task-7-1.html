@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				font-size: 20px;
+				font-family: "微软雅黑";
+			}
+			
+			.in1 {
+				width: 223px;
+				height: 26px;
+				margin-bottom: 2px;
+			}
+			
+			#sex {
+				vertical-align: top;
+				margin-top: 6px;
+			}
+			
+			.more {
+				width: 23px;
+				height: 20px;
+				vertical-align: middle;
+			}
+			
+			textarea {
+				width: 604px;
+				height: 329px;
+			}
+			
+			.sub {
+				background: none;
+				border: none;
+				border: 1px solid #d9d9d9;
+				width: 65px;
+				height: 27px;
+				border-radius: 4px;
+			}
+			
+			#sexman,
+			#sexwoman,
+			#wantman,
+			#wantwoman {
+				width: 25px;
+				height: 25px;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+
+	<body>
+		<form name="for1" method="post" action="">
+			姓名:
+			<input type="text" name="username" placeholder="用户名" class="in1">
+			<br/> 密码:
+			<input type="password" name="password" placeholder="密码" class="in1">
+			<br/> 性别:
+			<input type="radio" name="sex" id="sexman" value="male">
+			<label for="sexman">男</label>
+			<input type="radio" name="sex" id="sexwoman" value="female">
+			<label for="sexwoman">女</label>
+			<br/>取向:
+			<input type="radio" name="want" id="wantman" value="wantman">
+			<label for="wantman">男</label>
+			<input type="radio" name="want" id="wantwoman" value="wantwoman">
+			<label for="wantwoman">女</label>
+			<br/>爱好:
+			<input type="checkbox" name="dota" class="more">dota
+			<input type="checkbox" name="Tourism" class="more">旅游
+			<input type="checkbox" name="animal" class="more">动物
+			<br />评论:
+			<textarea name="maneywords" maxlength="10" placeholder="请输入内容"></textarea>
+			<br/>我的car:
+			<select name="mycar">
+				<option value="sabo">萨博</option>
+				<option value="lanbo">兰博基尼</option>
+				<option value="falali">法拉利</option>
+			</select>
+			<input type="submit" value="提交" class="sub" />
+		</form>
+	</body>
+
+</html>
