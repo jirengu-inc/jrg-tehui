@@ -6,7 +6,6 @@ body {
 	font-family: "宋体";
 	font-size: 12px;
 }
-
 ul,
 li {
 	list-style: none;
@@ -163,6 +162,7 @@ a {
 	width: 99px;
 	height: 29px;
 	border-radius: 2px;
+   border: #ABABAB 1px solid;
 }
 
 .email_state {
