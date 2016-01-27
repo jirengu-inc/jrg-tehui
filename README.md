@@ -1,15 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 533591f6fb568bdf0a9a79cbad0f80e1da1d61af
 # jrg-tehui
-特惠班作业项目
-[https://github.com/jirengu-inc/jrg-tehui](https://github.com/jirengu-inc/jrg-tehui)
 
-# git-test
-<<<<<<< HEAD
->>>>>>> 454ae6befa92203df634b016d905f905df2db0a0
-=======
+标签（空格分隔）： 特惠班级作业
 
->>>>>>> 533591f6fb568bdf0a9a79cbad0f80e1da1d61af
+---
+
+特惠班级作业项目地址：[https://github.com/jirengu-inc/jrg-tehui][1]
+
+
+  [1]: https://github.com/jirengu-inc/jrg-tehui
