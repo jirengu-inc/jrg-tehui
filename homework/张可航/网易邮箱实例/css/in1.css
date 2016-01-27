@@ -1,0 +1,288 @@
+@charset "UTF-8";
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f9f9f9;
+	font-family: "宋体";
+	font-size: 12px;
+}
+ul,
+li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+#header {
+	width: 963px;
+	height: 83px;
+	background: url(../img/emali.jpg) no-repeat 0 31px;
+	margin: 0 auto;
+}
+
+#header ul {
+	height: 26px;
+	padding-top: 31px;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#header .email {
+	width: 646px;
+	float: left;
+}
+
+#header .more {
+	float: left;
+	height: 26px;
+	width: 317px;
+	text-align: right;
+}
+
+.email a {
+	display: inline-block;
+	width: 125px;
+	height: 0;
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+.more a {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 26px;
+}
+
+#welcome {
+	width: 963px;
+	height: 38px;
+	margin: 0 auto;
+	border: 1px solid #5b88b8;
+	border-bottom: none;
+	border-radius: 3px 3px 0 0;
+	background: url(../img/bar1.jpg) repeat-x;
+	font-size: 15px;
+	line-height: 38px;
+	color: #ffffff;
+	text-indent: 22px;
+}
+
+#email_content {
+	width: 963px;
+	height: 538px;
+	border: 1px solid #e0e0e0;
+	margin: 0 auto;
+	background:#f5f5f5;
+}
+
+#email_left {
+	width: 646px;
+	float: left;
+	height: 538px;
+	background-color: #ffffff;
+}
+
+#email_right {
+	float: left;
+}
+
+#email_left .sign {
+	width: 420px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.sign a {
+	float: left;
+	width: 138px;
+	border: 1px solid #b6b6b6;
+	height: 32px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 35px;
+	color: #555555;
+	margin-left: -1px;
+	background: url(../img/sign_pic.jpg) repeat-x;
+}
+
+.sign .ative {
+	border: 1px solid #0f549f;
+	position: relative;
+	border-radius: 4px 0 0px 4px;
+	background: url(../img/sign_first.jpg) repeat-x;
+	color: #ffffff;
+}
+
+#information {
+	width: 439px;
+	margin: 0 auto;
+	margin-top: 33px;
+	font-size: 14px;
+	margin-bottom:48px;
+}
+
+#information .address {
+	width: 437px;
+	height: 29px;
+	line-height: 29px;
+}
+
+#information .star {
+	color: #cf5787;
+}
+
+.address input[type="text"] {
+	width: 214px;
+	height: 26px;
+	border-radius: 3px;
+	border: #ABABAB 1px solid;
+	outline: none;
+}
+
+.address strong {
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+.email_add {
+	display: inline-block;
+	width: 77px;
+	margin-left: 5px;
+}
+
+.address select {
+	width: 99px;
+	height: 29px;
+	border-radius: 2px;
+   border: #ABABAB 1px solid;
+}
+
+.email_state {
+	height: 34px;
+	line-height: 34px;
+	color: #a599a5;
+	text-indent: 88px;
+	font-size:12px;
+	font-family: "微软雅黑";
+	margin-bottom:12px;
+}
+.password{
+	height:28px;
+	padding-left:28px;
+}
+.password .pass{
+	display:inline-block;
+	width:53px;
+}
+.password input[type="password"]{
+	border: #ABABAB 1px solid;
+	width:340px;
+	height:26px;
+	border-radius: 3px;
+}
+.star_password{
+	height: 28px;
+}
+.star_password input[type="password"]{
+	border: #ABABAB 1px solid;
+	width:340px;
+	height:26px;
+	border-radius: 3px;
+}
+.check{
+	height:81px;
+}
+.check_left{
+	width:301px;
+	float:left;
+}
+.check_left .left_top{
+	height:53px;
+	text-indent:11px;
+	line-height:53px;
+}
+.check_left .checked{
+	margin-right:17px;
+	display:inline-block;
+}
+.check input[type="text"]{
+	width:209px;
+	height:27px;
+	border: #ABABAB 1px solid;
+	border-radius: 3px;
+}
+.left_bottom{
+	height:28px;
+	line-height:28px;
+	text-indent:88px;
+	color:#999999;
+}
+.check_right{
+	float:right;
+}
+.check_right img{
+	display:block;
+}
+.right_bottom{
+	height:28px;
+	line-height:28px;
+	color:#003399;
+	cursor:pointer;
+}
+.agree{
+	height:49px;
+	line-height:49px;
+	text-indent:88px;
+	font-size:12px;
+}
+.agree span{
+	color:#003399;
+}
+.agree input{
+	vertical-align: middle;
+	margin-top:-1px;
+	
+}
+.put{
+	height: 37px;
+	text-indent:88px;
+	
+}
+.put input[type="submit"]{
+	background:#60b54c;
+	border:1px solid #60b54c;
+	width:120px;
+	height:37px;
+	border-radius:4px;
+	color:#ffffff;
+	background:url(../img/blue.jpg) repeat-x;
+	cursor:pointer;
+}
+#email_right{
+	width:242px;
+	height:328px;
+	margin-left:44px;
+	margin-top:104px;
+	background: url(../img/more.jpg) no-repeat;
+}
+#footer{
+	width:960px;
+	margin:0 auto;
+	height: 39px;
+	text-align: center;
+	line-height:39px;
+}
+#footer a{
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#999999;
+}
+
