@@ -35,9 +35,9 @@
 </head>
 <body>
 	<form>
-		姓名：<input class="name" type="text" placeholder="用户名"><br>
+		姓名：<input class="name" type="text" name="name" placeholder="用户名"><br>
 
-		密码：<input class="name" type="password" placeholder="密码"><br>
+		密码：<input class="name" type="password" name="password" placeholder="密码"><br>
 
 		性别：<input type="radio" name="a" id="cender-a" class="middle" checked>
 			 <label for="cender-a">男</label>
@@ -51,11 +51,11 @@
 			 <input type="radio" id="dir-b" class="middle" name="b" checked>
 			 <label for="dir-b">女</label><br>
 
-		爱好：<input id="dota" class="middle" type="checkbox">	
+		爱好：<input id="dota" class="middle" type="checkbox" name="game">	
 			 <label for="dota">游戏</label>
-		     <input id="tourism" class="middle" type="checkbox" checked>
+		     <input id="tourism" class="middle" type="checkbox" name="tourism" checked>
 		     <label for="tourism">旅游</label>
-		     <input id="pet" class="middle" type="checkbox" checked>
+		     <input id="pet" class="middle" type="checkbox" name="pet" checked>
 		     <label for="pet">宠物</label><br>
 
 		评论：<textarea class="maneywords" maxlength=100 placeholder="请输入内容"></textarea><br>
