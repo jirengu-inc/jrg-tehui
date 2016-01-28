@@ -1,4 +1,8 @@
-# git-test
+# 饥人谷特惠班作业
 
-dev .....
+
+
+[jscode.me](http://jscode.me)
+
+[jirengu.com](http://jirengu.com)
 
