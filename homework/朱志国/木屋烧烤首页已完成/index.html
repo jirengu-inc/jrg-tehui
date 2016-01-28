@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>木屋官网首页</title>
+<meta name="description" content=""/>
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/mobilyslider.js"></script>
+<!--[if IE 6]>    
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script>
+        DD_belatedPNG.fix('*');
+    </script>
+<![endif]-->
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.home-ban').mobilyslider({
+        content:'.sliderContent',
+        children:'div',
+        transition:'horizontal',
+        animationSpeed:200,
+        autoplay:false,
+        autoplaySpeed:233000,
+        pauseOnHover:true,
+        bullets:true,
+        arrows:false,
+        arrowsHide:false,
+        prev:'prev',
+        next:'next',
+        animationStart: function(){},
+        animationComplete: function(){}
+    });   
+});
+</script>
+</head>
+<body>
+<div class="warp">
+  <div class="top_warp">
+    <div class="ju">
+      <div class="logo w_l"> <span><img src="images/logo.png"></span> </div>
+      <div class="nav w_l">
+        <ul class="hover-elem">
+          <li class="nLi">
+            <dl>
+              <dt><a href="#">首页</a></dt>
+            </dl>
+          </li>
+          <li class="nLi">
+            <dl>
+              <dt><a href="#">了解我</a></dt>
+              <dd class="nav02 sub">
+                <div class="link2"><a href="#">木屋烧烤</a> <a href="#">户外烧烤</a> <a href="#">移动烧烤GO串</a> <a href="#">正木基金</a> </div>
+              </dd>
+            </dl>
+          </li>
+          <li class="nLi">
+            <dl>
+              <dt><a href="#">爱烧烤</a></dt>
+              <dd class="nav02 sub">
+                <div class="link2"> <a href="#">新品</a> <a href="#">招牌美食</a>
+                  <div class="link1"><a href="#">关于品质</a>
+                   <p class="sub1"><a href="#">产品源头</a> <a href="#">产品加工</a> <a href="#">冷链配送</a></p>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+          </li>
+          <li class="nLi">
+            <dl>
+              <dt><a href="#">招伙伴</a></dt>
+              <dd class="nav04 sub">
+                <div class="link2"> <a href="#">职能部门的招聘</a> </div>
+              </dd>
+            </dl>
+          </li>
+          <li class="nLi">
+            <dl>
+              <dt><a href="#">要合作</a></dt>
+              <dd class="nav05 sub">
+                <div class="link2"><a href="#">商务合作</a>
+                  <div class="link1"><a href="#">找店铺</a><a href="#">供应链</a>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+          </li>
+          <li class="nLi">
+            <dl>
+              <dt><a href="#">找门店</a></dt>
+              <dd class="nav05 sub">
+                <div class="link2">
+                  <div class="link1"><a href="#">城市门店</a>
+                  <p class="sub1"><a href="#">北京</a> <a href="#">上海</a> <a href="#">广州</a> <a href="#">深圳</a> <a href="#">天津</a></p>
+                  </div>
+                  <a href="#">子主题２</a> </div>
+              </dd>
+            </dl>
+          </li>
+          <li class="nLi">
+            <dl>
+              <dt><a href="#">逛论坛</a></dt>
+            </dl>
+          </li>
+        </ul>
+      </div>
+      <script>
+	  jQuery(".nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+	  jQuery(".sub").slide({ type:"menu", titCell:".link1", targetCell:".sub1",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+      </script> 
+    </div>
+  </div>
+  <div class="banner">
+    <div class="banner_hd">
+      <div class="ban_hd">
+        <div class="bannimg">
+          <ul>
+            <li><a href="#"><img src="images/banner.jpg"></a></li>
+            <li><a href="#"><img src="images/banner1.jpg"></a></li>
+            <li><a href="#"><img src="images/banner.jpg"></a></li>
+            <li><a href="#"><img src="images/banner.jpg"></a></li>
+            <li><a href="#"><img src="images/banner.jpg"></a></li>
+          </ul>
+        </div>
+        <div class="hd">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          
+          <!-- 下面是前/后按钮代码，如果不需要删除即可 --> 
+          <a class="prev" href="javascript:void(0)"></a> <a class="next" href="javascript:void(0)"></a> </div>
+        <script type="text/javascript">
+             jQuery(".ban_hd").slide({mainCell:".bannimg ul",autoPlay:true});
+               </script> 
+      </div>
+    </div>
+  </div>
+  <div class="center_warp">
+    <div class="ju">
+      <div class="cent_pic">
+        <ul>
+          <li class="li1"> <a href="#">
+            <div class="caseThum"> <img src="images/pc1.jpg"> </div>
+            <div class="caseBottom  nrr">
+              <div class="caseName">
+                <div class="nft"> <img src="images/icon1.png"><br/>
+                  <font>媒体访谈</font> </div>
+              </div>
+              
+            </div>
+            </a> </li>
+          <li class="li2"> <a href="#">
+            <div class="caseThum"> <img src="images/pc2.jpg"> </div>
+            <div class="bg1"></div>
+            <div class="text1"><img src="images/icon2.png"><br/>
+                  <font>美食诱惑</font></div>
+            </a> </li>
+          <li class="li2"> <a href="#">
+            <div class="text1"><img src="images/icon3.png"><br/>
+                  <font>新店开业</font></div>
+            </a> </li>
+          <li class="li3"> <a href="#">
+            <div class="caseThum"> <img src="images/pc5.jpg"> </div>
+            <div class="caseBottom nrr">
+              <div class="caseName">
+                <div class="nft ct"> <img src="images/icon5.png"><br/>
+                  <font>兄弟品牌</font> </div>
+              </div>
+              
+            </div>
+            </a> </li>
+          <li class="li4"> <a href="#">
+            <div class="caseThum"> <img src="images/pc4.jpg"> </div>
+            <div class="bg1"></div>
+            <div class="text1"><img src="images/icon4.png"><br/>
+                  <font>新品上市</font></div>
+            </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot_warp">
+    <div class="ju">
+      <div class="foot1">
+        <ul>
+          <li>
+            <div class="ico_le w_l"> <img src="images/f1.jpg"><br/>
+              <font>@木屋烧烤</font> <span><a href="#">关注</a></span> </div>
+            <div class="ico_ri w_r"> <font>Weibo</font> <img src="images/ewm.jpg"><br/>
+              <span>木屋烧烤</span> </div>
+          </li>
+          <li>
+            <div class="ico_le w_l"> <img src="images/f2.jpg"><br/>
+              <font class="fott1">扫一扫</font><br/>
+              <font>关注木屋微信</font> </div>
+            <div class="ico_ri w_r"> <font>Wachat</font> <img src="images/ewm.jpg"><br/>
+              <span>木屋烧烤</span> </div>
+          </li>
+          <li class="li1">
+            <dl>
+              <dt> <span class="w_l"><img src="images/f3.jpg"></span> <font><b>联系电话</b><br/>
+                400-8080-117</font> </dt>
+              <dt> <span class="w_l"><img src="images/mail.jpg"></span> <font><b>企业邮箱</b><br/>
+                Service@1Cake.com</font> </dt>
+            </dl>
+          </li>
+          <li class="li2">
+            <dl>
+              <dt> <span class="w_l"><img src="images/f4.jpg"></span> <font>Join Us<br/>
+                <b>加入我们</b></font> </dt>
+              <dt> <span class="w_l"><img src="images/join.jpg"></span> <font>Muwu News<br/>
+                <b>木屋新闻</b></font> </dt>
+            </dl>
+          </li>
+        </ul>
+      </div>
+      <div class="foot2">
+        <dl class="ddl">
+          <dt>关于木屋烧烤</dt>
+          <dd><a href="#">使命宣言</a></dd>
+          <dd><a href="#">历史回顾</a></dd>
+          <dd><a href="#">1Cake责任</a></dd>
+          <dd><a href="#">企业宣言</a></dd>
+        </dl>
+        <dl class="ddl">
+          <dt>帮助中心</dt>
+          <dd><a href="#">常见问题</a></dd>
+          <dd><a href="#">会员问题</a></dd>
+          <dd><a href="#">联系我们</a></dd>
+        </dl>
+        <dl class="ddl">
+          <dt>隐私政策与使用条款</dt>
+          <dd><a href="#">隐私政策</a></dd>
+          <dd><a href="#">使用条款</a></dd>
+        </dl>
+        <dl class="ddl">
+          <dt>投诉与建议</dt>
+          <dd><a href="#">投诉</a></dd>
+          <dd><a href="#">建议</a></dd>
+        </dl>
+      </div>
+      <div class="copyright">copyright &copy; 2003-2016 muwubbq.com. All Rights Reserved. 粤ICP备09001617号.<br>深圳正君餐饮管理顾问有限公司 版权所有.
+</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
