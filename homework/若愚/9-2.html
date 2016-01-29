@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>9-2 字体图标</title>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<style>
+	
+	li{
+		list-style: none;
+	}
+	a{
+		color: #333;
+		text-decoration: none;
+	}
+
+	.header > li{
+		display: inline-block;
+		margin-right: 10px;
+	}
+	.header a:hover{
+		color: #9D55B8;
+	}
+
+
+
+</style>
+</head>
+<body>
+    <h1>使用字体图标 fortawesome</h1>
+
+	<p>1. 很多网站都流行使用字体图标，比如：http://fortawesome.github.io/Font-Awesome/icons/</p>
+	<p>2. 优点： 矢量（可无限制放大缩小）； 可像操作文字那样操作图标（颜色，大小，阴影）；用起来方便</p>
+
+
+	<h3>使用方法</h3>
+
+	<p>1. 到github把fontawesome 下载下来，地址: https://github.com/FortAwesome/Font-Awesome/releases/tag/v4.5.0 </p>
+	<p>2. 把下载的zip文件解压后，把 css 和 fonts 两个目录拷贝到当前html的同级别目录，注意位置不能错，文件名不要换。
+		如果当前文件目录下有css这个文件夹，直接合并即可。
+	</p>
+	<p>3. 引入 css/font-awesome.min.css 文件，在官网上查找合适的图标，安装官网上的demo范例使用</p>
+
+
+	<h1>demo</h3>
+    <ul class="header">
+    	<li><a href="#"> <i class="fa fa-forward"></i> 前进 </a></li>
+    	<li><a href="#"> <i class="fa fa-play"></i> 开始 </a></li>
+    	<li><a href="#"> <i class="fa fa-stop"></i> 停止 </a></li>
+    </ul>
+
+
+
+</body>
+</html>

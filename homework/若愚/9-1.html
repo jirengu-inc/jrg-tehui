@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>9-1 CSS Sprite</title>
+
+<style>
+	
+	li{
+		list-style: none;
+	}
+	a{
+		color: #333;
+		text-decoration: none;
+	}
+
+	.header > li{
+		display: inline-block;
+		margin-right: 10px;
+	}
+	.header a:hover{
+		color: #9D55B8;
+	}
+
+	/* 第一种方法 */
+	/**
+	 * 这里让 icon 以inline-block的方式展示，因此可以设置宽高，预留出窗口。否则因为span是行内元素无法设置宽高导致背景图展示不出来
+	 */
+	.icon {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		background: url(./imgs/icon-merge-resize-compress.png) 0 0 no-repeat;
+		background-size: 16px;
+	}
+
+	/* 第二种方法*/
+	/**
+	 * 这里icon-2 不设置宽高，而是设置左右padding 8px, 相当于水平方向预留16px宽度，垂直方向和文字高度相等(16px)
+	 * 用这种方式也能预留出窗口
+	 */
+	.icon-2 {
+		padding: 0 8px;
+		background: url(./imgs/icon-merge-resize-compress.png) 0 0 no-repeat;
+		background-size: 16px;
+	}
+
+	.icon-start{
+		background-position: 0 -15px;
+	}
+	.header a:hover .icon-start{
+		background-position: 0 1px;
+	}
+	.icon-end{
+		background-position: 0 -79px;
+	}
+	.header a:hover .icon-end{
+		background-position: 0 -63px;
+	}
+	.icon-stop{
+		background-position: 0 -47px;
+	}
+	.header a:hover .icon-stop{
+		background-position: 0 -31px;
+	}
+
+
+</style>
+</head>
+<body>
+    <h1>使用CSS Sprite 做背景图片</h1>
+    <ol>
+    	<li>1. 用图片合并工具把icon图片合并成一张图， 线上合并：http://csssprites.com/</li>
+    	<li>2. 把合并后的icon图片缩小到适当的尺寸</li>
+    	<li>3. 把缩小后的图片压缩</li>
+    	<li>4. 注意使用背景图icon时，一定要把图片的窗口留出来</li>
+    </ol>
+
+	<h3>第一种方法</h3>
+    <ul class="header">
+    	<li><a href="#"> <span class="icon icon-start"></span>前进 </a></li>
+    	<li><a href="#"> <span class="icon icon-end"></span>开始 </a></li>
+    	<li><a href="#"> <span class="icon icon-stop"></span>停止 </a></li>
+    </ul>
+
+
+	<h3>第二种方法</h3>
+	<style>
+
+	</style>
+    <ul class="header">
+    	<li><a href="#"> <span class="icon-2 icon-start"></span>前进 </a></li>
+    	<li><a href="#"> <span class="icon-2 icon-end"></span>开始 </a></li>
+    	<li><a href="#"> <span class="icon-2 icon-stop"></span>停止 </a></li>
+    </ul>
+
+</body>
+</html>

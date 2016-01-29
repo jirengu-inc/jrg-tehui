@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="task8-1" />
+  <meta charset="utf-8">
+  <title>定制按钮</title>
+
+<style>
+	
+  .btn{
+      display: inline-block; /*让行内元素能设置上下padding, 块级元素在行内展示*/
+	  padding: 4px 5px;
+	  font-size: 12px;
+	  text-decoration: none; /*去掉a的下划线*/
+	  color: #fff;
+	  line-height: 100%;     /*设置button的默认行高*/
+	  outline: none;         /*设置button在点击后出现蓝色边框*/
+	  border-radius: 3px;
+	  border: none;          /*去掉button的边框*/
+	  background-color: #F36E41;
+	  cursor: pointer;       /*让元素在鼠标放置时出现点击的形状*/
+	  
+  }
+  .btn:hover{
+	  background-color: #c14d21;
+  }
+  .btn:active{
+	  background-color: #e25f31;
+  }
+	
+</style>
+
+</head>
+<body>
+ <a class="btn" href="#">确定</a>
+<span class="btn" >取消</span>
+<div class="btn">提交</div>
+<button class="btn"> 确定</button>
+
+</body>
+</html>

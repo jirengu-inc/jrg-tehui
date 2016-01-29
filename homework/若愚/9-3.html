@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>9-2 边框做三角形</title>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<style>
+	
+	div{
+		margin-bottom: 30px;
+	}
+
+	.demo1{
+		width: 0;
+		border-left: 30px solid red;
+		border-top: 30px solid blue;
+		border-right: 30px solid yellow;
+		border-bottom: 30px solid green;
+	}
+
+	.demo2{
+		width: 0;
+		border-left: 30px solid transparent;
+		border-top: 30px solid blue;
+		border-right: 30px solid transparent;
+		border-bottom: 30px solid transparent;
+	}
+
+	.demo3{
+		width: 0;
+		border-left: 30px solid red;
+		border-top: 30px solid transparent;
+		border-right: 30px solid transparent;
+		border-bottom: 30px solid transparent;
+	}
+	.demo4{
+		width: 0;
+		border-left: 30px solid transparent;
+		border-top: 30px solid transparent;
+		border-right: 30px solid yellow;
+		border-bottom: 30px solid transparent;
+	}
+	.demo5{
+		width: 0;
+		border-left: 30px solid transparent;
+		border-top: 30px solid transparent;
+		border-right: 30px solid transparent;
+		border-bottom: 30px solid green;
+	}
+	.demo6{
+		width: 0;
+		border-left: 20px solid red;
+		border-top: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid red;
+	}
+	.demo7{
+		width: 0;
+		border-left: 20px solid transparent;
+		border-top: 20px solid transparent;
+		border-right: 20px solid green;
+		border-bottom: 20px solid green;
+	}
+</style>
+</head>
+<body>
+    <h1>使用border 做各种三角形</h1>
+    <p>本质上就是边框拼接，把不需要展示的边框设置为透明 各种三角形都来源于domo1</p>
+
+	<div class="demo1"></div>
+	<div class="demo2"></div>
+	<div class="demo3"></div>
+	<div class="demo4"></div>
+	<div class="demo5"></div>
+	<div class="demo6"></div>
+	<div class="demo7"></div>
+
+</body>
+</html>
