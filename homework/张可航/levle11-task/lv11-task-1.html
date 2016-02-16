@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul,li{
+				margin:0;
+				padding:0;
+				list-style:none;
+				cursor:pointer;
+			}
+			.bar{
+			
+				height:25px;
+				font:normal 15px/25px "微软雅黑";
+				background-color:#cbcbcb;			
+				
+			}
+			.bar >li:first-child{
+				padding-left:10px;
+			}
+			.bar > li{
+				float:left;
+				margin-right:20px;
+				position:relative;
+			}
+			.clear:after{
+				content:"";
+				display:block;
+				clear:both;
+			}
+			li > ul{
+				top:100%;
+				position:absolute;
+				background:#fff;
+				border:1px solid #CBCBCB;
+				left:0;
+				display:none;
+			}
+			li>ul>li{
+				padding:0 5px;
+			}
+			.bar >li:hover>ul{
+				display:block;
+			}
+			li>ul>li:hover{
+				background-color:#cbcbcb;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="bar clear">
+			<li>
+				前端
+				<ul>
+					<li>javascript</li>
+					<li>css</li>
+					<li>html</li>
+				</ul>
+			</li>
+			<li>
+				服务端
+				<ul>
+					<li>NODE</li>
+					<li>PHP</li>
+					<li>java</li>
+				</ul>
+			</li>
+			<li>
+				前端工具
+				<ul>
+					<li>SUBlime</li>
+					<li>WEBStrom</li>
+					<li>GIT</li>
+				</ul>
+			</li>
+			<li>HTML</li>
+			<li>NODE</li>
+		</ul>
+	</body>
+</html>
