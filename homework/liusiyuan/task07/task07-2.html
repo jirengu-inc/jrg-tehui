@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Task07-2</title>
+<style>
+p{
+	margin:4px;
+ }
+form{
+	font-size:20px;
+	font-family:"微软雅黑";
+}
+input{
+	font-size:16px;
+	font-family:"微软雅黑";
+}
+#comment{
+	width:430px;
+	height:200px;
+	font-size:20px;
+	font-family:"微软雅黑";
+}
+select{
+	font-size:16px;
+	font-family:"微软雅黑";
+	width:90px;
+}
+.btn{
+	border-radius:5px;
+	background: none;
+	border: 1px solid #ccc;
+	width:70px;
+}
+
+</style>
+</head>
+<body>
+	<form action="#" method="post">
+		<p><label for="name">姓名：</label><input type="text" name="name" placeholder="用户名" id="name" maxlength="20">
+		<p><label for="psw">密码：</label><input type="password" name="psw" id="psw" maxlength="16">
+		<p>性别：<input type="radio" name="sex" value="male" id="male"><label for="male">男</label><input type="radio" name="sex" value="female" id="female"><label for="female">女</label>
+        <p>取向：<input type="radio" name="so" value="men" id="men"><label for="men">男</label><input type="radio" name="so" value="women" id="women"><label for="women">女</label>
+        <p>爱好：<input type="checkbox" name="hobby" value="dota" id="dota"><label for="dota">dota</label>
+        	<input type="checkbox" name="hobby" value="travel" id="travel"><label for="travel">旅游</label><input type="checkbox" name="hobby" value="pet" id="pet"><label for="pet">宠物</label>
+        <p>	<label for="comment">评论：</label><textarea name="comment" id="comment" placeholder="ddd" maxlength="500"></textarea>
+        <p>我的car：<select name="mycar" id="mycar">
+        	<option value="saab">萨博</option>
+        	<option value="bmw">宝马</option>
+        	<option value="audi">奥迪</option>
+        	<option value="benz">奔驰</option>
+        </select>
+        <input type="submit" value="提交" class="btn">
+	</form>    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<style type="text/css" >
+form {
+	width:300px;
+	margin:20px auto ;
+	border:solid 1px red;
+	padding:20px 30px ;
+}
+
+</style>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+	<form name="homework" action="/test/6.php" method="post">
+		<section>
+			<label>姓名:<input name="name" type="text"/></label>
+		</section>
+		<section>
+			<label>密码:<input name="password" type="password"/></babel>
+		</section>
+		<section>
+			<label>性别：</label>
+			<label><input name="sex" type="radio" checked="checked"  value="sex1">男</label>
+			<label><input name="sex" type="radio" value="sex2">女</label>
+		</section>
+		<section>
+			<label>取向：</label>
+			<label><input name="quxiang" type="radio" value="quxiang1">男</label>
+			<label><input name="quxiang" type="radio" checked="checked"  value="quxiang2">女</label>
+		</section>
+		<section>
+			<label>爱好：</label>
+			<label><input name="habbit" type="checkbox" value="habbit1">dota</label>
+			<label><input name="habbit" type="checkbox" checked="checked" value="habbit2">旅游</label>
+			<label><input name="habbit" type="checkbox" checked="checked" value="habbit3">宠物</label>
+		<section>
+			<label>评论</label>
+			<textarea row="3" cols="20" placeholder="ddd">
+			</textarea>
+		</section>
+		<section>
+			<label>我的car：</label>
+			<select name="car">
+				<option value="0">萨博</option>
+				<option value="1">帕萨特</option>
+				<option value="3">特斯拉</option>
+				<input type="submit" value="提交">
+			</select>
+		</section>
+	</form>
+</body>
+</html>
