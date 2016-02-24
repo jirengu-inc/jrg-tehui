@@ -1,5 +1,5 @@
 
-# 饥人谷特惠班作业
+# 饥人谷特惠班一班作业
 
 [jscode.me](http://jscode.me)
 
