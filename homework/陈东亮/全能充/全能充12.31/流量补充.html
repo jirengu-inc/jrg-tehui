@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>流量补充</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript" src="layer/layer.js" ></script>
+	<script type="text/javascript">
+     window.onload = function() {
+     	var inputBtn = document.getElementById("inputBtn");
+     	inputBtn.addEventListener("touchstart", function() {
+     		layer.open({
+     			content: '<p class="submit-1">提交成功</p><p class="submit-2">您的“流量补充”请求提交成功</p>',
+     			style: 'width: 80%;background: #ffffff;margin: 0 auto;border-radius: 5px;',
+                 btn: ['<p class="submit-3">确认</p>']
+     		});
+     	});
+     }
+    </script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="supplement-1">
+			<p>请输入<span>中国移动</span>手机号码</p>
+			<input class="supplement-b" type="text" value="17001200210"><br>
+			<input class="supplement-a" type="text" value="请在此输入手机号确认"><br>
+			<p><span>两次输入号码不一样</span></p><br>
+			<input id="inputBtn" class="supplement-c" type="button" value="确认提交">
+		</div>
+
+    	<!-- <div class="submit-a">
+			<p class="submit-1">提交成功</p>
+			<p class="submit-2">您的“流量补充”请求提交成功</p>
+			<p class="submit-3">确认</p>
+		</div>
+		<div class="submit-a">
+			<p class="submit-1">提交失败</p>
+			<p class="submit-2">您的提交请求由于系统原因或其他原因失败了，请稍后再试。</p>
+			<p class="submit-3">确认</p>
+		</div>
+ -->
+
+
+		<div class="supplement-2">
+			<p>温馨提示：更换的充值号码需要与原充值号码为同一运营商，并且仅限于中国移动、中国联通、中国电信非港澳台手机号码或其它可在全能充平台上充值的手机号码</p>
+			<p>如果您在充值过程中，遇到任何问题，可咨询10039客服热线。</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+</body>
+</html>

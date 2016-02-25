@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>星巴克咖啡</title>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <!--为浏览器标题栏添加星巴克图标-->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="wrap">
+        <!--头部-->
+        <header class="top-header">
+            <img class="starbucks-logo" src="images/logo.png" alt="星巴克咖啡"/>
+            <nav class="top-menu">
+                <ul>
+                    <li class="selected"><a href="home.html" title="星巴克主页">主页</a></li>
+                    <li><a href="#" title="咖啡及文化">咖啡及文化</a></li>
+                    <li><a href="#" title="饮品及美食">饮品及美食</a></li>
+                    <li><a href="#" title="星享俱乐部">星享俱乐部</a></li>
+                    <li><a href="#" title="在线订阅">在线订阅</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--侧边栏 ps:用aside标签-->
+        <aside class="left-aside">
+            <section class="news">
+                <header>
+                    <h3>开启您的星享之旅</h3>
+                </header>
+                <p>
+                    星享卡会员光顾星巴克时可累积星星，兑换好礼！
+                    每累积消费50元可获赠一颗星星。星星越多，好礼越多哦！
+                    <a href="#">点击这里</a>开启您的星享惊喜之旅！
+                </p>
+            </section>
+
+            <section class="drinks">
+                <header>
+                    <h3>星巴克饮品</h3>
+                </header>
+
+                <figure>
+                    <img src="images/caffe-1.jpg" alt="美式咖啡"/>
+                    <figcaption>美式咖啡</figcaption>
+                </figure>
+
+                <figure class="figure-r">
+                    <img src="images/caffe-2.jpg" alt="卡布奇诺"/>
+                    <figcaption>卡布奇诺</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/caffe-3.jpg" alt="拿铁"/>
+                    <figcaption>拿铁</figcaption>
+                </figure>
+
+                <figure class="figure-r">
+                    <img src="images/caffe-4.jpg" alt="摩卡"/>
+                    <figcaption>摩卡</figcaption>
+                </figure>
+                <!--figcaption标签定义figure元素的标题-->
+
+                <div class="clear"></div>
+                <!--设置一个空的div标签来清除浮动，否则将影响aside标签的高度等等-->
+            </section>
+        </aside>
+
+        <!--主题内容-->
+        <!--在一个文档中，不能出现一个以上的 <main> 元素。<main> 元素不能是以下元素的后代：<article>、<aside>、<footer>、<header> 或 <nav>,所以就不用设置class类名了-->
+        <main>
+            <article>
+                <header>
+                    <h3>TweepSip 咖啡杯</h3>
+                    <time datetime="2015-07-31">2015年7月31日</time>
+                </header>
+                <p>
+                    大家好，我是星巴克咖啡的CEO。我们刚刚成功地开发了新的TweetSip咖啡杯。
+                    这是一种创造性的新技术：喝一口咖啡，你在Twitter上的状态就会更新。
+                    我刚刚做了一个视频来演示这个过程。
+                </p>
+                <figure>
+                    <video controls width="520" height="294">
+                        <source src="video/tweetsip.mp4">
+                        <source src="video/tweetsip.webm">
+                        <source src="video/tweetsip.ogv">
+                    </video>
+                    <figcaption>星巴克咖啡CEO演示TweepSip咖啡杯的使用</figcaption>
+                </figure>
+
+                <footer>
+                    <span>阅读(100)</span>
+                    <span>评论(2)</span>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>家庭咖啡作坊帮助孩子们上大学</h3>
+                    <time datetime="2015-06-30">2015年6月30日</time>
+                    <!--datetime标签是方便搜索引擎搜索与img标签中alt类似-->
+                </header>
+                <p>
+                    坎得利亚•塔拉兹是哥斯达黎加的一所家庭合作社，
+                    由哥斯达黎加最早成立的“微型作坊”发展而来，
+                    其目的是为了控制其出产的咖啡豆品质。
+                </p>
+                <p>
+                    他们获得了成功并最终得到了星巴克的垂青，
+                    这不仅改善了桑切斯一家的生活质量，
+                    而且他们现在已经有能力为让子女上大学，接受更好的教育。
+                </p>
+                <p>
+                    该地出产的咖啡：
+                    <b>星巴克家常咖啡豆</b>，<b>浓缩烘培</b>，<b>优肯综合咖啡豆</b>
+                </p>
+                <footer>
+                    <span>阅读(100)</span>
+                    <span>评论(2)</span>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>部落与商业文化的有机融合有助社区发展</h3>
+                    <time datetime="2015-05-20">2015年5月20日</time>
+                </header>
+                <p>
+                    2002年，比尔贾纳接手了395英亩的奇甲巴庄园，这个原本已经被荒废的地方，
+                    如今却已经成为国际知名的咖啡生产地，因其出产的咖啡品质优异，
+                    继而成为了星巴克的供应商。
+                </p>
+                <p>
+                    在这个过程中，比尔积极投身于社区发展，同时也为原住民提供了工作机会。
+                </p>
+                <p>
+                    该地出产的咖啡：<b>浓缩烘焙</b>，<b>祥龙咖啡豆</b>
+                </p>
+                <footer>
+                    <span>阅读(100)</span>
+                    <span>评论(2)</span>
+                </footer>
+            </article>
+
+            <article class="last-article">
+                <header>
+                    <h3>咖啡为这个新国家的种植户带来发展的希望</h3>
+                    <time datetime="2015-03-29">2015年3月29日</time>
+                </header>
+                <p>
+                    东帝汶，既是世界上最晚建立国家之一，亦是最贫穷的国家之一。
+                    然而其出产独特咖啡为成千上万依靠单一经济作物生活的农户带来了新希望。
+                    一个拥有17,000名成员的农户协作社正在和星巴克合作，
+                    为咖啡种植者争取更高的产品收购价的同时也为其社区提供基本的医疗服务。
+                </p>
+                <p>
+                    该地出产的咖啡：
+                    <b>TimorLorosa'e</b>
+                    <small>（核心咖啡只在澳大利亚销售）</small>
+                    <!--small标签是注释的意思-->
+                </p>
+                <footer>
+                    <span>阅读(100)</span>
+                    <span>评论(2)</span>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!--底脚部分-->
+    <footer class="page-footer">
+        ©2015 Starbucks Corporation.All rights reserved.
+    </footer>
+</body>
+</html>

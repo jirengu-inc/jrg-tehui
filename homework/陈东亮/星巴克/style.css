@@ -1,0 +1,210 @@
+main{
+    display: block;
+}
+/*解决ie浏览器兼容问题，让ie浏览器把main当成是一个块元素来识别*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    /*继承父元素的字体系列样式，如黑体，宋体等*/
+}
+
+/*通用样式*/
+body{
+    background-color: #ffffff;
+    font: 14px 微软雅黑，黑体，Verdana，Arial，sans-serif;
+    color: #333333;
+    border-top: 8px solid #006f47;
+    /*设置上边框样式*/
+}
+
+ul{
+    list-style-type: none;
+    /*清除无序列表圆点*/
+}
+
+/*外层盒子*/
+.wrap{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*头部*/
+.top-header{
+    margin: 10px 0;
+    height: 120px;
+}
+
+/*logo*/
+.starbucks-logo{
+    float: left;
+    margin-left: 20px;
+}
+
+/*导航*/
+.top-menu{
+    float: left;
+    margin-left: 30px;
+    margin-top: 83px;
+}
+
+.top-menu ul li{
+    display: inline;
+    background-color: #efe5d0;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+/*设置导航栏未访问及访问后的状态*/
+.top-menu ul li a:link,.top-menu ul li a:visited{
+    text-decoration: none;
+    color: #006f47;
+    font-weight: bold;
+}
+
+/*设置主页默认默认显示背景颜色*/
+.top-menu ul li.selected{
+    background-color: #c8b99c;
+}
+
+/*侧边栏*/
+.left-aside{
+    float: left;
+    width: 350px;
+}
+
+.left-aside section{
+    background: #efe5d0 url("images/background.gif") top left;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.left-aside h3{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #006f47;
+}
+
+/*星享之旅*/
+.news p{
+    line-height: 1.8em;
+}
+
+.news a{
+    text-decoration: none;
+    color: #006f47;
+}
+
+/*星巴克饮品*/
+.drinks figure{
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.drinks figcaption{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.drinks .figure-r{
+    margin-left: 20px;
+}
+
+.drinks figure img{
+    width: 141px;
+    height: 158px;
+    border: 2px solid #ffffff;
+}
+
+/*主内容区*/
+main{
+    background: #efe5d0 url("images/background.gif") top left;
+    padding: 20px;
+    margin-left: 360px;
+}
+
+main article{
+    border-bottom: 1px dashed #c8b99c;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+main .last-article{
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+main article h3{
+    color: #006f47;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+main article time{
+    color: #675c47;
+}
+
+main article p{
+    line-height: 1.5em;
+    text-indent: 30px;
+    /*段落缩进30px像素*/
+    margin: 10px 0;
+}
+
+main article b{
+    font-weight: bold;
+    color: #675c47;
+}
+
+main article small{
+    color: #808080;
+    font-size: 0.8em;
+}
+
+/*页脚*/
+.page-footer{
+    clear: both;
+    padding: 15px;
+    margin-top: 10px;
+    color: #efe5d0;
+    background-color: #675c47;
+    text-align: center;
+    font-size: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
