@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<style type="text/css" >
+
+#header,#footer {
+	background-color: #ccc;
+	height: 50px;
+}
+
+.right {
+	background-color: yellow;
+	float: left;
+	width: 200px;
+	height: 150px;
+	margin-left: -200px;
+}
+
+.main-child {
+	background-color: green;
+	float: left;
+	width: 100%;
+}
+
+.main {
+	margin-right: 200px;
+	float: left;
+}
+
+#footer {
+	clear: both;
+}
+
+</style>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+	<div id="header">头部</div>
+	<div id="content">
+		<div class="main">
+			<div class="main-child">首先BFC是一个名词，是一个独立的布局环境，我们可以理解为一个箱子（实际上是看不见摸不着的），箱子里面物品的摆放是不受外界的影响的。转换为BFC的理解则是：BFC中的元素的布局是不受外界的影响（我们往往利用这个特性来消除浮动元素对其非浮动的兄弟元素和其子元素带来的影响。）并且在一个BFC中，块盒与行盒（行盒由一行中所有的内联元素所组成）都会垂直的沿着其父元素的边框排列。</div>
+		</div>
+		<div class="right">右侧边栏，宽度固定</div>
+	</div>
+	<div id="footer">尾部</div>
+</body>
+</html>
