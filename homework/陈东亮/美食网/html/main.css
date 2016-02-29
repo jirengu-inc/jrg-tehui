@@ -1,0 +1,329 @@
+html, body, h1, h2, h3, p, ol, ul, li, a {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font: inherit;
+    font-weight: bold;
+}
+
+/*通用样式*/
+body{
+    background: #333333 url(../images/bg-body.jpg) top left repeat;
+    font: 14px/24px 微软雅黑, 黑体, Verdana, Arial, sans-serif;
+    color: #333333;
+}
+
+h2{
+    color: #79B1A3;
+    margin: 10px 0 20px 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #79B1A3;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+textarea{
+    resize: none;
+    /*文本框禁止拖动*/
+}
+
+/*头部*/
+.header{
+    background: url("../images/bg-header.jpg") top left repeat;
+    padding: 10px;
+}
+
+/*天气预报*/
+.weather{
+    position: absolute;
+    padding: 5px;
+    left: 30px;
+    top: 10px;
+}
+
+/*logo大图片*/
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    height: 129px;
+    width: 226px;
+}
+
+/*登陆条*/
+.logo-bar{
+    text-align: right;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    padding: 10px;
+    z-index: 99;/*设置优先显示级别*/
+    background-color: rgba(127, 45, 24,0.75);/*背景颜色透明度*/
+}
+
+.logo-bar a{
+    text-decoration: none;
+    color: #ffffff;
+    background: url("../images/login-icon.gif") top left no-repeat;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    padding-left: 28px;
+}
+
+.logo-bar a.qq-logo{
+    background-position: 0 0;
+}
+
+.logo-bar a.wb-logo{
+    background-position: 0 -28px;
+}
+.logo-bar a:hover{
+    color: chartreuse;
+    text-decoration: underline;/*鼠标滑过显示下划线*/
+}
+
+/*页面导航栏*/
+.nav{
+    text-align: center;
+    padding-left: 0;
+}
+
+.nav li{
+    display: inline;
+}
+.nav a{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 26px;
+    font-size: 19px;
+}
+
+.nav a:hover{
+    background-color: #a0000f;
+    color: chartreuse;
+}
+
+/*主页主体内容*/
+.content{
+    background: url("../images/main.jpg") center center no-repeat;
+    height: 640px;
+    width: 100%;
+    position: relative;
+}
+
+.content .content-1{
+    position: absolute;
+    background-color: rgba(0,0,0,0.75);/*设置背影颜色为透明黑色*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.content .content-2{
+    background: url("../images/nw_logo.gif") 0 center no-repeat;
+    width: 670px;
+    height: 200px;
+    margin: 0 auto;
+    padding-left: 320px;
+}
+
+.content .content-2 p{
+    color: #ffffff;
+    line-height: 26px;
+    font-size: 14px;
+    padding-top: 18px;
+
+}
+
+.content .content-2 h3{
+    color: #ffffff;
+    font-size: 32px;
+    height: 44px;
+    margin-top: 13px;
+}
+
+/*页脚*/
+.footer{
+    padding: 18px 0;
+    background: url("../images/bg-body.jpg") #252525;
+}
+
+.footer p{
+    color: #A1A8A9;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;/*指定文本为斜体*/
+    text-transform: uppercase;/*定义字体为大写*/
+}
+
+/*美食菜单*/
+.menu-content{
+    width: 670px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    margin: 30px auto 0 auto;
+    background: url("../images/bg-main.jpg") top left repeat;
+}
+
+.menu-1{
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+}
+
+.menu-1 img{
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    padding: 5px;
+}
+
+.menu-1 p{
+    overflow: hidden;
+    margin-left: 170px;
+    height: 91px;
+    line-height: 24px;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.menu-1 li{
+    border: 1px solid #b56663;
+    height: 160px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.menu-content h2{
+    color: #79B1A3;
+    margin: 10px 0 20px 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.menu-content h3{
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-left: 169px;
+}
+.menu-content a{
+    text-decoration: none;
+    color: #79B1A3;
+    font: inherit;
+}
+
+.clear{
+    clear: both;
+}
+
+/*西红柿炒鸡蛋*/
+.egg-content{
+    background: url("../images/bg-main.jpg") top left repeat;
+    width: 670px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.egg-content p{
+    overflow: hidden;
+    line-height: 24px;
+    padding: 2px;
+    margin-left: 10px;
+}
+
+.egg-content h3{
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #79B1A3;
+    padding: 5px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.egg-content li{
+    margin-left: 50px;
+    padding: 2px;
+}
+
+/*免责声明*/
+.disc-content{
+    background: url("../images/bg-main.jpg") top left repeat;
+    margin: 15px auto;
+    width: 670px;
+    padding: 15px;
+}
+
+/*发布美食*/
+.group-content{
+    background: url("../images/bg-main.jpg") top left repeat;
+    width: 670px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.suggest{
+    width: 100%;
+}
+
+.suggest td{
+    padding: 5px;
+}
+
+.suggest .td-left{
+    width: 100px;
+    text-align: right;
+}
+
+.suggest .td-center{
+    text-align: center;
+}
+
+.suggest input[type=text]{
+    width: 500px;
+    padding: 7px;
+    border: 2px solid #79B1A3;
+    /*input[type=text]为属性选择器，表示选择input标签中属性值为[type=text]的来执行*/
+}
+
+.suggest textarea{
+    width: 500px;
+    padding: 7px;
+    border: 2px solid #79B1A3;
+}
+
+#material{
+    height: 100px;
+}
+
+#process{
+    height: 300px;
+}
+
+.suggest .td-center input{
+    width: 120px;
+    font-size: 20px;
+
+}

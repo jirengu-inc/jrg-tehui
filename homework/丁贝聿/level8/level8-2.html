@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>jirengu-tehui-level8-dingbeiyu</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	*{
+		font-family: "微软雅黑";
+		margin: 0;
+		padding: 0; 
+	}
+	li{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	#header{
+		height: 60px;
+		background-color: #333;
+		line-height: 60px;
+		/*text-indent: 5px;*/
+		margin-bottom: 30px;	
+	}
+	.nav a{
+		color: green;
+		font-size: 20px
+	}
+	.nav > li{
+		display: inline-block;
+		margin-right: 25px;
+		height: 60px;
+		line-height: 60px;
+		padding: 0 15px;
+
+	}
+	.nav li:hover{
+		background-color: #fff;
+	}
+	.nav li:hover a{
+		color: #333;
+	}
+	.title{
+		height: 60px;
+		font-size: 40px;
+		line-height: 50px;
+		text-align: center;
+		color: green;
+	}
+	.desc{
+		height: 60px;
+		font-size: 15px;
+		padding-left: 40px;
+		line-height: 60px;
+		color: #8f8f8f;
+	}
+	h3{
+		height: 30px;
+		font-size: 20px;
+		line-height: 30px;
+		padding-left: 10px;
+		border-bottom: 1px dashed #d3d3d3;
+	}
+	p{
+		height: 60px;
+		font-size: 17px;
+		line-height: 60px;
+		padding-left: 40px;
+	}
+	.tree{
+		padding-left: 30px;
+		line-height: 30px;
+		font-size: 17px;
+	}
+	.tree a{
+		color: green;
+	}
+	.tree ul{
+		padding-left: 40px;
+		color: #8f8f8f;
+	}
+	.has-child li{
+		display: none;
+	}
+	.has-child.open li{
+		display: block;
+	}
+	.tree>li:before{
+		content: '+';
+		padding-left: 0.5em;
+	}
+	.tree li.open:before{
+		content: '-';
+		padding-left: 0.5em;
+	}
+
+</style>
+</head>
+<body>
+    <body>
+    <div id="header">
+        <ul class="nav">
+          <li><a href="">首页</a></li>
+          <li><a href="">简介</a></li>
+          <li><a href="">作品</a></li>
+          <li><a href="">关于</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1 class="title">前端学习</h1>
+        <p class="desc">这是我的前端学习笔记</p>
+        <h3>第一章</h3>
+        <p>这是我的前端学习笔
+            记这是我是<span class="text-less"> 特别的</span> 的前端学习笔
+            记这是我的前端学习笔记这是
+            我的前端学习,笔记这是我, 的前端, 
+            学习笔记
+        </p>
+        <h3>第二章</h3>
+        <p>这是我的前端学习笔
+            记这是我的前端学习笔
+            记这是我的<span class="text-less"> 特别的</span>前端学习笔记这是
+            我的前端学习,笔记这是我, 的前端, 
+            学习笔记
+        </p>
+        <ul class="tree">
+          <li class="open has-child">
+            <a href="#">记笔记</a>
+            <ul>
+              <li>jscode</li>
+              <li>博客</li>
+              <li>Github</li>
+            </ul>
+          </li>
+          <li class="has-child">
+              <a href="#">做作业</a>
+              <ul>
+                  <li>jscode</li>
+                  <li>博客</li>
+                  <li>Github</li>
+                </ul>
+          </li>
+          <li><a href="#">多思考</a></li>
+          <li><a href="#">多练习</a></li>
+        </ul>
+    </div>
+    <div id="footer"></div>
+
+</body>
+</html>

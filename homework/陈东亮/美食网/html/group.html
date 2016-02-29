@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>讨论组</title>
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../images/new_year_logo.gif" alt="美食网"/>
+        </div>
+        <div class="logo-bar">
+            <a class="qq-logo" href="#">QQ登陆</a>
+            <a class="wb-logo" href="#">微博登陆</a>
+        </div>
+        <ul class="nav">
+            <li><a href="home.html" title="美食网 - 主页">主页</a></li>
+            <li><a href="menu.html" title="美食网 - 主页">美食菜单</a></li>
+            <li><a href="group.html" title="美食网 - 主页">讨论组</a></li>
+        </ul>
+    </div>
+    <!--header结束-->
+    <div class="group-content">
+        <h2>发布美食</h2>
+        <form action="">
+            <table class="suggest">
+                <tr>
+                    <td class="td-left">
+                        <label for="recipe-name">食谱名称</label>
+                    </td>
+                    <td>
+                        <input type="text" id="recipe-name" value="美食"/>
+                        <!--value代表输入框中的默认显示值-->
+                        <!--input标签中text代表文本框，password代表密码框-->
+                        <!--label标签中的for属性与input标签中的id属性相同才能关联到一起-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td-left">
+                        <label for="photos">上传成品图</label>
+                    </td>
+                    <td>
+                        <input type="file" id="photos"/>
+                        <!--file是上传属性-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td-left">
+                        <label>美食类型</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" id="type-a" checked/><label for="type-a">原创</label>
+                        <input type="radio" name="type" id="type-b"/><label for="type-b">转载</label>
+                        <!--radio是单选属性,如果想让原创和转载是一组的话需要设置name属性而且要相同-->
+                        <!--在同一个页面当中不能有两个相同的id值-->
+                        <!--checked为默认选中属性-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td-left">
+                        <label>人数</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option>1人</option>
+                            <option selected>2人</option>
+                            <option>3人</option>
+                            <option>多人</option>
+                        </select>
+                        <!--selected表示默认选中2人-->
+                        <!--下拉列表使用select标签，用option标签为select标签添加选项-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td-left">
+                        <label for="material">材料</label>
+                    </td>
+                    <td>
+                        <textarea id="material"></textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="td-left">
+                        <label for="process">制作过程</label>
+                    </td>
+                    <td>
+                        <textarea id="process"></textarea><br/>
+                        <!--textarea标签代表多行文本-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td-left"></td>
+                    <td>
+                        <input type="checkbox" id="news-mail" checked/>
+                        <label for="news-mail">订阅新闻邮件？</label>
+                        <!--checkbox标签代表复选框，也就是多选,在这里也可以使用单选按钮，但是单选按钮是圆点，复选按钮是方形所以用这个-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="td-center"><!--单元格合并-->
+                        <input type="submit" value="发布"/>
+                        <!--submit默认是提交，可以使用value更换显示内容-->
+                        <input type="reset" value="重新填写"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy;2015 - RecipeWorld - 美食网</p>
+    </div>
+    <!--footer结束-->
+</body>
+</html>
