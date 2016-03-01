@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>task 10-2</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+*{
+	padding:0px;
+	margin:0px;
+}
+.box{
+	width:400px;
+	height:200px;
+	border:1px solid #666;
+	margin:50px;
+	position:relative;
+}
+.a1{
+	border-style:solid;
+	border-width:20px;
+	position:absolute;
+	top:-40px;
+	left:20px;
+	border-color:transparent transparent #666 transparent;
+}
+.a2{
+border-style:solid;
+	border-width:20px;
+	position:absolute;
+	top:0px;
+	left:360px;
+	border-color:red red transparent transparent;
+}
+.a3{
+	border-style:solid;
+	border-width:20px;
+	position:absolute;
+	top:-40px;
+	left:20px;
+	border-color:transparent transparent #ccc transparent;
+}
+.a3:after{
+	content: '';
+    border-width: 18px;
+    border-color: transparent transparent #fff transparent;
+    border-style: solid;
+    position: absolute;
+    top: -15px;
+    left: -18px;
+}
+</style>
+</head>
+<body>
+	<div class="box">
+		<div class="a1"></div>
+</div>
+	<div class="box">
+		<div class="a2"></div>
+</div>
+	<div class="box">
+		<div class="a3"></div>
+</div>
+</body>
+</html>
