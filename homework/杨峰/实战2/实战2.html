@@ -29,15 +29,20 @@ li {
 
 #header {
 	height: 50px;
-	content: '';
-	display: block;
-	clear: both;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px #ccc solid;
+
 }
 
 #banner-top {
 	background-color: #b84d45;
 	color: white;
 	padding: 50px;
+	margin-top: 50px;
 }
 
 .content {
@@ -237,6 +242,17 @@ img {
 
 i {
     margin-right: 5px;
+}
+
+.mywork>a:after {
+	content:'';
+	border-width: 5px;
+	border-style: solid;
+	border-color: #333 transparent transparent transparent;
+	line-height: 50px;
+	left: 6px;
+	top: 10px;
+	position: relative;
 }
 
 
