@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>task-9-1</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style type="text/css">
+	
+	a{
+		color: #333;
+		text-decoration: none;
+	}
+
+	
+	li{
+		list-style: none;
+	}
+	
+	.player > li{
+		display: inline-block;
+		margin-right: 10px;
+	}
+	.player a:hover{
+		color: #9D55B8;
+	}
+
+	span {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		background: url(https://github.com/jirengu-inc/jrg-tehui/blob/master/homework/%E8%8B%A5%E6%84%9A/imgs/icon-merge-resize-compress.png?raw=true) 0 0 no-repeat;
+		background-size: 16px;
+	}
+
+
+	.start{
+		background-position: 0 -15px;
+	}
+	.player a:hover .start{
+		background-position: 0 1px;
+	}
+	.end{
+		background-position: 0 -79px;
+	}
+	.player a:hover .end{
+		background-position: 0 -63px;
+	}
+	.stop{
+		background-position: 0 -47px;
+	}
+	.player a:hover .stop{
+		background-position: 0 -31px;
+	}
+
+</style>
+</head>
+<body>
+
+    <ul class="player">
+    	<li><a href="#"> <span class="start"></span>前进 </a></li>
+    	<li><a href="#"> <span class="end"></span>开始 </a></li>
+    	<li><a href="#"> <span class="stop"></span>停止 </a></li>
+    </ul>
+
+</body>
+</html>
