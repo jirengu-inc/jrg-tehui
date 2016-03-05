@@ -1,0 +1,337 @@
+ html,body{
+		   	  width:100%;
+		   	  height:100%;
+		   	  font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+		   }
+			body,h1,h2,h3,p,dl,dd{
+				margin:0;
+				padding:0;
+			}
+			@font-face {
+				font-family: 'myicon';
+				src: url('../fonts/icomoon.eot?lexlps');
+				src: url('../fonts/icomoon.eot?lexlps#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?lexlps') format('truetype'), url('../fonts/icomoon.woff?lexlps') format('woff'), url('../fonts/icomoon.svg?lexlps#icomoon') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			a{
+				text-decoration:none;
+			}
+			ul,li{
+				margin:0;
+				padding:0;
+				list-style:none;
+			}
+			#header{
+				width:100%;
+				height:100%;
+				background:url(../img/bg.jpg) no-repeat center center;
+				background-size:cover;
+				overflow:auto;
+				display:table;
+			}
+			#header .header_content{
+				width:960px;
+				text-align:center;
+				display:table-cell;
+				vertical-align:middle;
+				
+			}
+			#header .start{
+				
+				font-size:44px;
+				line-height:64px;
+				color:#333;
+				font-weight:800;
+			}
+			#header .free{
+				color:#333;
+				font-size:20px;
+				line-height:60px;
+				font-weight:500;
+			}
+			#header a{
+				margin-top:10px;
+				display:block;
+				width:140px;
+				font-size:18px;
+				color:#fff;
+				background-color: #6c7e84;
+				line-height:45px;
+				margin:0 auto;
+			}
+			#header a:hover{
+				background-color:rgba(0,0,0,0.7);
+			}
+			#prefect_theme{
+				padding-top:72px;
+				padding-bottom:72px;
+			}
+			#prefect_theme .more{
+				text-align:center;
+				font-size:20px;
+				line-height:42px;
+				color:#333;
+			}
+			#prefect_theme div{
+				text-align:center;
+				font-size:16px;
+				line-height:27px;
+			}
+			#prefect_theme div a{
+				color:#337ab7;
+			}
+			#prefect_theme div a:hover{
+				text-decoration:underline;
+			}
+			#our-Ser{
+				padding-top:66px;
+				padding-bottom:80px;
+				background-color:#337ab7;
+			}
+			#our-Ser .introduce{
+				font-size:21px;
+				color:#fff;
+				line-height:42px;
+				text-align:center;
+			}
+			#our-Ser .morder-border{
+				width:100px;
+				height:1px;
+				background:#fff;
+				margin-top:14px;
+				margin:0 auto;
+			}
+			#our-Ser .Service-Name{	
+				width:960px;
+				margin:0 auto;	
+				margin-top:27px;
+				color:#fff;
+			}
+			#our-Ser .cloud{
+				width:25%;
+				
+				
+			}
+			.cloud div{
+				width:100px;
+				height:100px;
+				font-size:60px;
+				border-radius:100px;
+				background:#fff;
+				margin:0 auto;
+				font-family:"myicon";
+				text-align:center;
+				color:blue;
+				line-height:100px;
+			}
+			.cloud h3{
+				margin-top:15px;
+				font-size:18px;
+				line-height:26px;
+	
+				text-align:center;
+			}
+			.cloud p{
+				margin-top:8px;
+				font-size:14px;
+				line-height:20px;
+				text-align:center;
+			}
+			.cloud a{
+				display:block;
+				width:92px;
+				line-height:32px;
+				font-size:12px;
+				color:#000;
+				background:#fff;
+				text-align:center;		
+				margin:13px auto 0 auto ;
+			}
+			.cloud a:hover{
+				background-color:rgba(255,255,255,0.8);
+			}
+			.Service-Name li{
+				float:left;
+				
+				
+			}
+			.clearfix:after{
+				content:"";
+				display:block;
+				clear:both;
+			}
+			#vertical{
+				width:100%;
+				background:url(../img/callout.jpg) no-repeat center center;
+				background-size:cover;
+				font-size:2em;
+				color:#fff;
+				line-height:400px;
+				text-align:center;
+				font-weight:200;
+			}
+			#ourwork{
+				width:100%;
+				padding:60px 0;
+				text-align:center;
+				
+			}
+			#ourwork .min-content{
+				width:960px;
+				margin:0 auto;
+				text-align:center;
+				
+				
+			}
+			#ourwork dl{
+				
+				margin-right:-40px;
+			}
+			#ourwork dt{
+				width:960px;
+				font-size:30px;
+				line-height:58px;
+				margin-bottom:20px;
+			}
+			#ourwork dt:after{
+				content:"";
+				display:block;
+				width:100px;
+				height:1px;
+				background:#ccc;
+				margin:0 auto;
+			}
+			#ourwork dd{
+				float:left;
+				
+			}
+			#ourwork dd img{
+				display:block;
+				width:460px;
+				margin-right:40px;
+				margin-bottom:30px;
+			}
+			#ourwork dd img:hover{
+				opacity:0.7;
+				cursor:pointer;
+			}
+			#ourwork .button-view{
+				display:inline-block;
+				font-size:16px;
+				width:140px;
+				text-align:center;
+				line-height:40px;
+				background-color:#999;
+				color:#fff;
+			}
+			#ourwork .button-view:hover{
+				background-color:rgba(0,0,0,0.7);
+			}
+			#buttons-below{
+				font-size:0;
+				padding:55px 0;
+				background-color:#337ab7;
+				text-align:center;
+			}
+			#buttons-below p{
+			
+				font-size:20px;
+				line-height:66px;
+				color:#fff;
+				text-align:center;
+			}
+			#buttons-below a{
+				display:inline-block;
+				padding:0 18px;
+				font-size:13px;
+				line-height:46px;
+			}
+			#buttons-below .white{
+				background-color:#fff;
+				color:#000;
+			}
+			#buttons-below .white:hover{
+				background-color:rgba(255,255,255,0.8);
+			}
+			#buttons-below .blue{
+				background-color:#1f496e;
+				margin-left:23px;
+				color:#fff;
+			    
+			}
+			#buttons-below .blue:hover{
+				background-color:rgba(0,0,0,0.7);
+			}
+			#footer{
+				padding:100px 0;
+				
+			}
+			#footer .end-boot{
+				
+				font-size:17px;
+				line-height:28px;
+				font-weight:700;
+				text-align:center;
+			}
+			#footer .place{
+				font-size:12px;
+				line-height:20px;
+				text-align:center;
+			}
+			#footer .phone{
+				font-size:12px;
+				line-height:24px;
+				text-align:center;
+			}
+			#footer .phone:before{
+				font-family:"myicon" !important;
+				content:"\f095";
+				display:inline;
+				padding-right:8px;
+			}
+			#footer .email{
+				display:block;
+				text-align:center;
+				font-size:12px;
+				line-height:20px;
+				color:#337ab7;
+			}
+			#footer .email:hover{
+				text-decoration:underline;
+			}
+			#footer .email:before{
+				font-family:"myicon" !important;
+				content:"\f003";
+				display:inline;
+				color:#000;
+				font-size:14px;
+				padding-right:8px;
+				-webkit-font-smoothing: antialiased; /*文字抗锯齿效果*/
+                -moz-osx-font-smoothing: grayscale;
+			}
+			#footer .social{
+				font-family:"myicon" !important;
+				font-size:40px;
+				text-align:center;
+				line-height:80px;
+			}
+			#footer a{
+				color:#337ab7;
+			}
+			#footer .bar{
+				width:100px;
+				height:1px;
+				background:#ccc;
+				margin:0 auto;
+			}
+			#footer .copyright{
+				text-align:center;
+				margin-top:20px;
+				font-size:12px;
+				color:#777;
+			}
+			#footer .social a:hover{
+				color:#23527c;
+			}
