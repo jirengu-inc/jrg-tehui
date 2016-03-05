@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Start Bootstrap</title>
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<style>
+		html,body,h1,h2,h3,h4,h5,h6,p,a,ul,li{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			font-family: 'microsoft yahei',Helvetica,Arial,sans-serif;
+		}
+		a{
+			text-decoration: none;
+		}
+		li{
+			list-style: none;
+		}
+		/*header开始*/
+		.header{
+			background: url(../images/bg.jpg) center center no-repeat scroll;
+			width: 100%;
+			height: 100%;
+			display: table;
+			background-size: cover;
+		}
+		.header-ct{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+		.header-ct h1{
+			font-size: 60px;
+			margin-top: -100px;
+		}
+		.header-ct h3{
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		.header-ct a{
+			padding: 10px 16px;
+			color: #fff;
+			background: rgba(0,0,0,0.4);
+		}
+		.header-ct a:hover{
+			background: black;
+		}
+		/*header结束*/
+		
+		/*titel开始*/
+		.titel{
+			padding: 50px 0;
+		}
+		.titel-ct{
+			text-align: center;
+		}
+		.titel-ct h2{
+			font-size: 25px;
+		}
+		.titel-ct p{
+			font-size: 20px;
+			font-weight: 100;
+		}
+		.titel-ct a{
+			color: #0087FF;
+		}
+		.titel-ct a:hover{
+			text-decoration: underline;
+		}
+		/*titel结束*/
+		
+		/*content开始*/
+		.content{
+			background: #3E7CB4;
+		}
+		.content-ct{
+			width: 960px;
+			margin: 0 auto;
+		}
+		.content-b{
+			float: left;
+			display: inline-block;
+			width: 25%;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		.content:after{
+			content: " ";
+			display: block;
+			clear: both;
+		}
+		.content h2{
+			text-align: center;
+			color: #fff;
+			font-size: 30px;
+			padding-top: 30px;
+			padding-bottom: 10px;
+		}
+		.content hr{
+			width: 100px;
+		}
+		.content .border{
+			margin-left: 28%;
+			width: 100px;
+			height: 100px;
+			border-radius: 50px;
+			background-color: white;
+			display: table;
+		}
+		.content i{
+			font-size: 50px;
+			color: #337ab7;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.content p,h3{
+			color: #fff;
+			margin-bottom: 30px;
+		}
+		.content a{
+			display: inline-block;
+			margin-bottom: 20px;
+			color: #333;
+			padding: 6px 12px;
+			background: #fff;
+		}
+		.content a:hover{
+			background: rgba(255,255,255,0.7);
+		}
+		/*content结束*/
+
+		/*text开始*/
+		.text{
+			background: url(../images/callout.jpg) no-repeat center center scroll;
+			height: 400px;
+			width: 100%;
+			display: table;
+			background-size: cover;
+		}
+		.text>div{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			color: #fff;
+		}
+		.text h2{
+			font-size: 60px;
+		}
+		/*text结束*/
+
+		/*work开始*/
+		.work{
+			width: 100%;
+			text-align: center;
+		}
+		.work h2{
+			text-align: center;
+			font-size: 30px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.work hr{
+			width: 100px;
+			color: #eee;
+		}
+		.work-a{
+			width: 1060px;
+			margin: 20px auto;
+		}
+		.work a{
+			float: left;
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+		.work-a:after{
+			content: " ";
+			display: block;
+			clear: both;
+		}
+		.view{
+			text-align: center;
+			display: inline-block;
+			color: #fff;
+			background: rgba(0,0,0,0.4);
+			padding: 8px;
+		}
+		.view:hover{
+			background-color: black;
+		}
+		/*work结束*/
+
+		/*look开始*/
+		.look{
+			padding: 60px 0;
+			background-color: #3E7CB4;
+			text-align: center;
+		}
+		.look h2{
+			color: #fff;
+			margin-bottom: 30px;
+		}
+		.look a:nth-child(2){
+			padding: 10px;
+			background: #fff;
+		}
+		.look a:nth-child(3){
+			padding: 10px 16px;
+			background: #254A6C;
+			color: #fff;
+			margin-left: 20px;
+		}
+		.look a:nth-child(3):hover{
+			background: #272722;
+		}
+		/*look结束*/
+
+		/*footer开始*/
+		.footer{
+			text-align: center;
+			margin: 100px 0;
+		}
+		.footer h4{
+			font-size: 25px;
+		}
+		.footer p{
+			font-size: 15px;
+			margin: 10px 0;
+		}
+		.fa-phone{
+			
+		}
+		.footer a{
+			color: #3E7CB4;
+		}
+		.footer a:hover{
+			text-decoration: underline;
+		}
+		.footer-img{
+			font-size: 50px;
+		}
+		.footer-img a{
+			margin-left: 15px;
+		}
+		.footer hr{
+			width: 100px;
+			color: #ccc;
+			margin-top: 20px;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+		.footer p:last-of-type{
+			font-size: 10px;
+		}
+		/*footer结束*/
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="header-ct">
+			<h1>Start Bootstrap</h1>
+			<h3>Free Bootstrap Themes & Templates</h3>
+			<br>
+			<a href="#">Find Out More</a>
+		</div>		
+	</div>
+
+	<div class="titel">
+		<div class="titel-ct">
+			<h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+			<p>This theme features some wonderful photography courtesy of 
+				<a href="#">Death to the Stock Photo.</a>
+			</p>
+		</div>	
+	</div>
+
+	<div class="content">
+		<div class="content-ct">
+			<h2>Our Services</h2>
+			<hr>
+			<div class="content-b">
+				<div class="border"><i class="fa fa-cloud"></i></div>
+				<h3>Service Name</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<a href="#">Learn More</a>
+			</div>
+			
+			<div class="content-b">
+				<div class="border"><i class="fa fa-compass"></i></div>
+				<h3>Service Name</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<a href="#">Learn More</a>
+			</div>
+			<div class="content-b">
+				<div class="border"><i class="fa fa-flask"></i></div>
+				<h3>Service Name</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<a href="#">Learn More</a>
+			</div>
+			<div class="content-b">
+				<div class="border"><i class="fa fa-shield"></i></div>
+				<h3>Service Name</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<a href="#">Learn More</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="text">
+		<div>
+			<h2>Vertically Centered Text</h2>
+		</div>
+	</div>
+
+	<div class="work">
+		<h2>Our Work</h2>
+		<hr>
+		<div class="work-a">
+			<a href="#">
+				<img src="../images/portfolio-1.jpg" height="333" width="500" alt="">
+			</a>
+			<a href="#">
+				<img src="../images/portfolio-2.jpg" height="333" width="500" alt="">
+			</a>
+			<a href="#">
+				<img src="../images/portfolio-3.jpg" height="333" width="500" alt="">
+			</a>
+			<a href="#">
+				<img src="../images/portfolio-4.jpg" height="333" width="500" alt="">
+			</a>
+			<p class="view" href="#">View More Iteme</p>
+		</div>
+	</div>
+
+	<div class="look">
+		<h2>The buttons below are impossible to resist.</h2>
+		<a href="#">Clike Me!</a>
+		<a href="#">Look at Me!</a>
+	</div>
+	
+	<div class="footer">
+		<h4>Start Bootstrap</h4>
+		<p>3481 Melrose Place	<br>
+		Beverly Hills, CA 90210</p>
+		<ul>
+			<li>
+				<i class="fa fa-phone">&nbsp;&nbsp;(123) 456-7890</i><br>
+				<i class="fa fa-envelope-o">
+					<a href="#">&nbsp;&nbsp;name@example.com</a>
+				</i>
+			</li>
+		</ul>
+		<br>
+		<ul class="footer-img">
+			<li>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-dribbble"></i></a>
+			</li>
+		</ul>
+		<hr>
+
+		<p>Copyright © Your Website 2014</p>
+	</div>
+</body>
+</html>
