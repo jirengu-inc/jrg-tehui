@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实战2</title>
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<style>
+		html,body,ul,li,a,h1,h2,h3,h4,h5,h6,i{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		/*nav开始*/
+		.nav{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.nav > ul:after{
+			content: " ";
+			display: block;
+			clear: both;
+		}
+		.nav > ul > li{
+			position: relative;
+			float: left;
+			margin-right: 25px;
+		}
+		.nav > ul > li > a{
+			display: inline-block;
+			padding: 15px 10px;
+			color: #777;
+		}
+		.hide{
+			position: absolute;
+			display: none;
+			width: 130px;
+			border: 1px solid #BFB9B9;
+			background: #fff;
+			border-radius: 3px;
+		}
+		.hide hr{
+			color: #ccc;
+		}
+		.hide-color{
+			display: block;
+			padding: 5px 0;
+			padding-top: 5px;
+			color: black;
+			padding-left: 20px;
+		}
+		.hide-no{
+			margin-left: 20px;
+		}
+		.hide li:last-of-type{
+			color: #777;
+			margin-bottom: 8px;
+		}
+		.hide-color:hover{
+			background: #eee;
+		}
+		.hide i{
+			margin-right: 5px;
+		}
+		.nav-header{
+			font-size: 20px;
+		}
+		.nav > ul > li:hover .hide{
+			display: block;
+			z-index: 1;
+		}
+		/*nav结束*/
+
+		/*header开始*/
+		.header{
+			background: #AD584C;
+		}
+		.header-ct{
+			width: 1000px;
+			margin: 0 auto;
+			padding: 30px 0;
+		}
+		.header-ct h1{
+			font-size: 60px;
+			line-height: 1;
+			color: #fff;
+		}
+		.header-ct p{
+			line-height: 1;
+			font-size: 20px;
+			color: #ECD9D7;
+		}
+		/*header结束*/
+
+		/*content开始*/
+		.content{
+			width: 1000px;
+			margin: 0 auto;
+			margin-top: 40px;
+		}
+		.content ul:after{
+			content: " ";
+			display: block;
+			clear: both;
+		}
+		.content ul{
+			background-color: #F5F5F5;
+			padding: 10px 0;
+		}
+		.content li{
+			float: left;
+			margin-left: 10px;
+		}
+		.content > ul > li > a{
+			color: #AD584C;
+		}
+		.content > ul > li > a:hover{
+			color: #550AAA;
+			text-decoration: underline;
+		}
+		.content > ul > li > a:after{
+			content: "/";
+			display: inline-block;
+			margin-left: 10px;
+			color: #ccc;
+		}
+		
+		.tent{    
+			margin-left: -15px;
+    		margin-right: -28px;
+			/*overflow: auto;*/
+		}
+		.content-ct{
+			width: 30%;
+			float: left;
+			padding: 0 15px;
+			margin-top: 30px;
+		}
+
+		.content-ct img{
+			display: inline-block;
+			max-width: 100%;
+			height: 229px;
+		}
+		.content-ctv{
+			padding: 10px;
+			border: 1px solid #eee;
+			text-align: center;
+		}
+		.content-ctv h3{
+			font-size: 24px;
+		    margin-top: 30px;
+    		margin-bottom: 10px;
+		}
+		.content-ctv a:last-of-type{
+			padding: 7px 10px;
+			border: 1px solid #ccc;
+			color: #333;
+	   		background-color: #fff;
+	   		border-radius: 5px;
+			display: inline-block;
+			margin-top: 10px;
+	   		margin-bottom: 20px;
+		}
+		.content-ctv a:hover{
+			opacity: 0.7;
+		}
+		.content:after{
+			content: " ";
+			display: block;
+			clear: both;
+		}
+		/*content结束*/
+
+		/*footer开始*/
+		.footer{
+			margin-top: 50px;
+		}
+		.footer-top{
+			text-align: center;
+			padding: 50px 0;
+			background-color: #b84d45;
+			color: #fff;
+		}
+		.footer-top h2{
+			font-size: 30px;
+		}
+		.footer-bt{
+			text-align: center;
+		}
+		.footer-bt hr{
+			margin-top: 40px;
+		    margin-bottom: 40px;
+		    border: 0;
+		    color: #eee;
+		    width: 1000px;
+		    border-top: 1px solid #eee;
+	    }
+	    .footer-bt a{
+	    	color: #b84d45;
+	    }
+	    .footer-bt a:hover{
+	    	color: #803630;
+	    	text-decoration: underline;
+	    }
+	    .footer-bt p{
+	    	margin-bottom: 50px;
+	    }
+		/*footer结束*/
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li  class="nav-header"><a href="#">饥人谷</a></li>
+			<li>
+				<a class="triangle" href="#">我的作品</a><i class="fa fa-caret-down"></i>
+				<ul class="hide">
+					<li><a class="hide-color" href="#"><i class="fa fa-star"></i>作品1</a></li>
+					<li><a class="hide-color" href="#"><i class="fa fa-star"></i>作品2</a></li>
+					<li><a class="hide-color" href="#"><i class="fa fa-star"></i>作品3</a></li>
+					<hr>
+					<li class="hide-no">作品4</li>
+				</ul>
+			</li>
+			<li><a href="#">博客</a></li>
+			<li><a href="#">项目</a></li>
+			<li><a href="#">关于我</a></li>
+		</ul>
+	</div>
+
+	<div class="header">
+		<div class="header-ct">
+			<h1>页面特征</h1>
+			<p>不需要处理响应式，不使用 Bootstrap，不需要 js。</p>
+			<p>图标使用 font-awesome,页面中心内容固定宽度1000px</p>
+		</div>
+	</div>
+
+	<div class="content">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li>我的作品</li>
+		</ul>
+		<div class="tent">
+			<div class="content-ct">
+				<div class="content-ctv">
+					<a href="#"><img src="../images/creative.jpg" height="490" width="750" alt=""></a>
+					<h3>Creative</h3>
+					<p>A one page creative theme.</p>
+					<a href="#">查看</a>
+				</div>
+			</div>
+
+			<div class="content-ct">
+				<div class="content-ctv">
+					<a href="#"><img src="../images/creative.jpg" height="490" width="750" alt=""></a>
+					<h3>Agency</h3>
+					<p>A one page creative theme.</p>
+					<a href="#">查看</a>
+				</div>
+			</div>
+
+			<div class="content-ct">
+				<div class="content-ctv">
+					<a href="#"><img src="../images/creative.jpg" height="490" width="750" alt=""></a>
+					<h3>Freelancer</h3>
+					<p>A one page creative theme.</p>
+					<a href="#">查看</a>
+				</div>
+			</div>
+
+			<div class="content-ct">
+				<div class="content-ctv">
+					<a href="#"><img src="../images/creative.jpg" height="490" width="750" alt=""></a>
+					<h3>Grayscale</h3>
+					<p>A one page creative theme.</p>
+					<a href="#">查看</a>
+				</div>
+			</div>
+
+			<div class="content-ct">
+				<div class="content-ctv">
+					<a href="#"><img src="../images/creative.jpg" height="490" width="750" alt=""></a>
+					<h3>Landing Page</h3>
+					<p>A one page creative theme.</p>
+					<a href="#">查看</a>
+				</div>
+			</div>
+
+			<div class="content-ct">
+				<div class="content-ctv">
+					<a href="#"><img src="../images/creative.jpg" height="490" width="750" alt=""></a>
+					<h3>Stylish Portfolio</h3>
+					<p>A one page creative theme.</p>
+					<a href="#">查看</a>
+				</div>
+			</div>
+
+			<div class="content-ct">
+				<div class="content-ctv">
+					<a href="#"><img src="../images/creative.jpg" height="490" width="750" alt=""></a>
+					<h3>Full Width Pics</h3>
+					<p>A one page creative theme.</p>
+					<a href="#">查看</a>
+				</div>
+			</div>
+
+			<div class="content-ct">
+				<div class="content-ctv">
+					<a href="#"><img src="../images/creative.jpg" height="490" width="750" alt=""></a>
+					<h3>One Page Wonder</h3>
+					<p>A one page creative theme.</p>
+					<a href="#">查看</a>
+				</div>
+			</div>
+
+			<div class="content-ct">
+				<div class="content-ctv">
+					<a href="#"><img src="../images/creative.jpg" height="490" width="750" alt=""></a>
+					<h3>Half Slider</h3>
+					<p>A one page creative theme.</p>
+					<a href="#">查看</a>
+				</div>
+			</div>
+
+			<div class="content-ct">
+				<div class="content-ctv">
+					<a href="#"><img src="../images/creative.jpg" height="490" width="750" alt=""></a>
+					<h3>Full Slider</h3>
+					<p>A one page creative theme.</p>
+					<a href="#">查看</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-top">
+			<h2>想更详细的了解我？</h2>
+			<p>下载简历，打我电话找我吧</p>
+		</div>
+		<div class="footer-bt">
+			<hr>
+			<p>模板来自<a href="#">start Bootstrap.</a></p>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
