@@ -17,8 +17,17 @@
 		}
 		/*nav开始*/
 		.nav{
-			width: 1000px;
-			margin: 0 auto;
+		    height: 50px;
+		    position: fixed;
+		    background-color: white;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    border-bottom: 1px #ccc solid;
+		    z-index: 1;
+		}
+		.nav-ct{
+			margin-left: 170px;
 		}
 		.nav > ul:after{
 			content: " ";
@@ -78,6 +87,7 @@
 		/*header开始*/
 		.header{
 			background: #AD584C;
+			margin-top: 50px;
 		}
 		.header-ct{
 			width: 1000px;
@@ -215,7 +225,7 @@
 </head>
 <body>
 	<div class="nav">
-		<ul>
+		<ul class="nav-ct">
 			<li  class="nav-header"><a href="#">饥人谷</a></li>
 			<li>
 				<a class="triangle" href="#">我的作品</a><i class="fa fa-caret-down"></i>
