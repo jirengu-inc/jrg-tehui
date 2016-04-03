@@ -1,259 +1,262 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>实战2</title>
-<meta name="description" content="">
-<meta name="keywords" content="">
-<link href="css/font-awesome.min.css" rel="stylesheet">
-<link href="css/font-awesome.css" rel="stylesheet">
-<style>
-html,body,ul,li,h1,p{
-	padding:0px;
-	margin:0px;
-}
-	li{
-		list-style:none;
-	}
-	a{
-		text-decoration:none;
-	}
-	#header{
-		width:1000px;
-		margin:0 auto;
-		font-size:14px;
-		color:#666;
-	}
-	.nav>ul>li{
-		float:left;
-		margin:20px;
-		position:relative;
-	}
-	.nav>ul:after{
-		content:'';
-		display:block;
-		clear:both;
-	}
-	.nav a{
-		font-size:16px;
-		color:#666;
-	}
-	.nav a:hover{
-		color:#111;
-	}
-	.child{
-		border:1px solid #eee;
-		position:absolute;
-		top:100%;
-		left:-10%;
-		display:none;
-		border-radius:5px;
-		background:#fff;
-	}
-	.child>li{
-		font:15px;
-		color:#111;
-		line-height:15px;
-		width:140px;
-		margin:15px 0px;
-	}
-	.son:hover .child{
-		display:block;
-	}
-	.delat{
-    display: inline-block;
-    width: 0;
-    height: 0px;
-    margin-left: 2px;
-    vertical-align: middle;
-    border:4px solid ;
-    border-color:#666 transparent transparent transparent;
-}
-#top{
-	height:250px;
-	background:#b84d45;
-}
-.content-top{
-	width:1000px;
-	margin:0 auto;
-	color:#fff;
-	padding: 52px;
-
-}
-.content-top>h1{
-	font-size:60px;
-	margin:5px;
-}
-.content-top>p{
-	font-size:25px;
-	margin:5px;
-}
-.my-works{
-	width:1000px;
-	margin:20px auto;
-	padding:10px;
-	background:#eee;
-}
-.works{
-	width:1000px;
-	margin:0 auto;
-	font-family:'微软雅黑';
-}
-.works>li{
-	display:inline-block;
-	height:400px;
-	width:306px;
-	border:1px solid #eee;
-	margin-bottom:20px;
-	margin-left:10px;
-	border-radius:5px;
-}
-.works>li{
-	text-align:center;
-}
-.works a{
-	display:inline-block;
-	width:50px;
-	height:30px;
-	border:1px solid #eee;
-	line-height:30px;
-	margin:30px;
-	border-radius:5px;
-}
-.works a:hover{
-	background:#eee;
-}
-.works p{
-	font-size:12px;
-}
-.works img{
-	width:300px;
-	margin:3px;
-	border:1px solid #eee;
-	border-radius:5px;
-}
-.works img:hover{
-	opacity:0.5;
-}
-#under{
-	background:#b84d45;
-	height:150px;
-	margin:30px auto;
-}
-.under-content{
-	width:1000px;
-	margin:0 auto;
-	text-align:center;
-	padding:47px;
-}
-.under-content>h1,.under-content>p{
-	color:#fff;
-	font-family:'微软雅黑';
-}
-hr{
-	width:1000px;
-	border-color:#eee;
-}
-#footer{
-	margin:0 auto;
-}
-span{
-	color:#b84d45;
-}
-.footer-content{
-	width:1000px;
-	text-align:center;
-	margin:30px auto;
-}
-</style>
-</head>
-<body>
-    <div id="header">
-    	<div class="nav">
-    		<ul>
-    			<li><a href="#">饥人谷</a></li>
-    			<li class="son">
-    				<a href="">我的作品</a>
-    				<div class="delat"></div>
-    				<ul class="child">
-    					<li><i class="fa fa-globe fa-fw"></i><a href="">作品1</a></li>
-    					<li><i class="fa fa-star fa-fw"></i><a href="">作品2</a></li>
-    					<li><i class="fa fa-shopping-cart fa-fw"></i><a href="">作品3</a></li>
-    				</ul>
-    			</li>
-    			<li><a href="">博客</a></li>
-    			<li><a href="">项目</a></li>
-    			<li><a href="">关于我</a></li>
-    		</ul>
-    	</div>
-    </div>
-    <div id="top">
-    	<div class="content-top">
-    		<h1>页面特征</h1>
-    		<p>不需要处理响应式，不使用 Bootstrap，不需要 js.</p>
-    		<p>图标使用 font-awesome,页面中心内容固定宽度1000px</p>
-    	</div>
-    </div>
-    <div id="main">
-    	<div class="my-works">
-    		<a href="">首页</a>/我的作品
-    	</div>
-		<ul class="works">
-			<li><img src="img/creative.jpg">
-				<h2>Creative</h2>
-				<p>A one page creative theme.</p>
-				<a href="">查看</a></li>
-			<li><img src="img/agency.jpg">
-				<h2>Agency</h2>
-				<p>A one page agency theme.</p>
-				<a href="">查看</a></li>
-			<li><img src="img/freelancer.jpg">
-				<h2>Freelancer</h2>
-				<p>A one page freelancer theme.</p>
-				<a href="">查看</a></li>
-			<li><img src="img/grayscale.jpg">
-				<h2>Grayscale</h2>
-				<p>A multipurpose one page theme.</p>
-				<a href="">查看</a></li>
-			<li><img src="img/landing-page.jpg">
-				<h2>Landing Page</h2>
-				<p>A clean, functional landing page theme.</p>
-				<a href="">查看</a></li>
-			<li><img src="img/stylish-portfolio.jpg">
-				<h2>Stylish Portfolio</h2>
-				<p>A stylish Bootstrap portfolio theme.</p>
-				<a href="">查看</a></li>
-			<li><img src="img/full-width-pics.jpg">
-				<h2>Full Width Pics</h2>
-				<p>Full width picture backgrounds.</p>
-				<a href="">查看</a></li>
-			<li><img src="img/one-page-wonder.jpg">
-				<h2>One Page Wonder</h2>
-				<p>A simple one page website template.</p>
-				<a href="">查看</a></li>
-			<li><img src="img/half-slider.jpg">
-				<h2>Half Slider</h2>
-				<p>A half page image slider template.</p>
-				<a href="">查看</a></li>
-			<li><img src="img/full-slider.jpg">
-				<h2>Full Slider</h2>
-				<p>A full page image slider template.</p>
-				<a href="">查看</a></li>
-		</ul>
-    </div>
-    <div id="under">
-		<div class="under-content">
-    	<h1>想更详细的了解我？</h1>
-    	<p>下载简历，打我电话找我吧</p>			
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>实战2</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<style>
+		html,body,ul,li,h1,p{
+			padding:0px;
+			margin:0px;
+		}
+			li{
+				list-style:none;
+			}
+			a{
+				text-decoration:none;
+			}
+			#header{
+				width:1000px;
+				margin:0 auto;
+				font-size:14px;
+				color:#666;
+			}
+			.nav>ul>li{
+				float:left;
+				margin:20px;
+				position:relative;
+			}
+			.nav>ul:after{
+				content:'';
+				display:block;
+				clear:both;
+			}
+			.nav a{
+				font-size:16px;
+				color:#666;
+			}
+			.nav a:hover{
+				color:#111;
+			}
+			.child{
+				border:1px solid #eee;
+				position:absolute;
+				top:100%;
+				left:-10%;
+				display:none;
+				border-radius:5px;
+				background:#fff;
+			}
+			.child>li{
+				font:15px;
+				color:#111;
+				line-height:15px;
+				width:140px;
+				margin:15px 0px;
+			}
+			.son:hover .child{
+				display:block;
+			}
+			.delat{
+				display: inline-block;
+				width: 0;
+				height: 0px;
+				margin-left: 2px;
+				vertical-align: middle;
+				border:4px solid ;
+				border-color:#666 transparent transparent transparent;
+		}
+		#top{
+				height:250px;
+				background:#b84d45;
+		}
+		.content-top{
+			width:1000px;
+			margin:0 auto;
+			color:#fff;
+			padding: 52px;
+		}
+		.content-top>h1{
+			font-size:60px;
+			margin:5px;
+		}
+		.content-top>p{
+			font-size:25px;
+			margin:5px;
+		}
+		.my-works{
+			width:1000px;
+			margin:20px auto;
+			padding:10px;
+			background:#eee;
+		}
+		.works{
+			width:1000px;
+			margin:0 auto;
+			font-family:'微软雅黑';
+		}
+		.works>li{
+			float:left;
+			height:400px;
+			width:306px;
+			border:1px solid #eee;
+			margin-bottom:20px;
+			margin-left:10px;
+			border-radius:5px;
+		}
+		.works:after{
+			display:block;
+			content:'';
+			clear:both;
+		}
+		.works>li{
+			text-align:center;
+		}
+		.works a{
+			display:inline-block;
+			width:50px;
+			height:30px;
+			border:1px solid #eee;
+			line-height:30px;
+			margin:30px;
+			border-radius:5px;
+		}
+		.works a:hover{
+			background:#eee;
+		}
+		.works p{
+			font-size:12px;
+		}
+		.works img{
+			width:300px;
+			margin:3px;
+			border:1px solid #eee;
+			border-radius:5px;
+		}
+		.works img:hover{
+			opacity:0.5;
+		}
+		#under{
+			background:#b84d45;
+			height:150px;
+			margin:30px auto;
+		}
+		.under-content{
+			width:1000px;
+			margin:0 auto;
+			text-align:center;
+			padding:47px;
+		}
+		.under-content>h1,.under-content>p{
+			color:#fff;
+			font-family:'微软雅黑';
+		}
+		hr{
+			width:1000px;
+			border-color:#eee;
+		}
+		#footer{
+			margin:0 auto;
+		}
+		span{
+			color:#b84d45;
+		}
+		.footer-content{
+			width:1000px;
+			text-align:center;
+			margin:30px auto;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="nav">
+				<ul>
+					<li><a href="#">饥人谷</a></li>
+					<li class="son">
+						<a href="">我的作品</a>
+						<div class="delat"></div>
+						<ul class="child">
+							<li><i class="fa fa-globe fa-fw"></i><a href="">作品1</a></li>
+							<li><i class="fa fa-star fa-fw"></i><a href="">作品2</a></li>
+							<li><i class="fa fa-shopping-cart fa-fw"></i><a href="">作品3</a></li>
+						</ul>
+					</li>
+					<li><a href="">博客</a></li>
+					<li><a href="">项目</a></li>
+					<li><a href="">关于我</a></li>
+				</ul>
+			</div>
 		</div>
-    </div>
-    <div id="footer">
-    	<hr>
-    	<div class="footer-content">
-    	<p>模板来自<span>start Bootstrap.</span></p>
-    	</div>
-
-    </div>
-</body>
-</html>
+		<div id="top">
+			<div class="content-top">
+				<h1>页面特征</h1>
+				<p>不需要处理响应式，不使用 Bootstrap，不需要 js.</p>
+				<p>图标使用 font-awesome,页面中心内容固定宽度1000px</p>
+			</div>
+		</div>
+		<div id="main">
+			<div class="my-works">
+				<a href="">首页</a>/我的作品
+			</div>
+			<ul class="works">
+				<li><img src="img/creative.jpg">
+					<h2>Creative</h2>
+					<p>A one page creative theme.</p>
+					<a href="">查看</a></li>
+					<li><img src="img/agency.jpg">
+						<h2>Agency</h2>
+						<p>A one page agency theme.</p>
+						<a href="">查看</a></li>
+						<li><img src="img/freelancer.jpg">
+							<h2>Freelancer</h2>
+							<p>A one page freelancer theme.</p>
+							<a href="">查看</a></li>
+							<li><img src="img/grayscale.jpg">
+								<h2>Grayscale</h2>
+								<p>A multipurpose one page theme.</p>
+								<a href="">查看</a></li>
+								<li><img src="img/landing-page.jpg">
+									<h2>Landing Page</h2>
+									<p>A clean, functional landing page theme.</p>
+									<a href="">查看</a></li>
+									<li><img src="img/stylish-portfolio.jpg">
+										<h2>Stylish Portfolio</h2>
+										<p>A stylish Bootstrap portfolio theme.</p>
+										<a href="">查看</a></li>
+										<li><img src="img/full-width-pics.jpg">
+											<h2>Full Width Pics</h2>
+											<p>Full width picture backgrounds.</p>
+											<a href="">查看</a></li>
+											<li><img src="img/one-page-wonder.jpg">
+												<h2>One Page Wonder</h2>
+												<p>A simple one page website template.</p>
+												<a href="">查看</a></li>
+												<li><img src="img/half-slider.jpg">
+													<h2>Half Slider</h2>
+													<p>A half page image slider template.</p>
+													<a href="">查看</a></li>
+													<li><img src="img/full-slider.jpg">
+														<h2>Full Slider</h2>
+														<p>A full page image slider template.</p>
+														<a href="">查看</a></li>
+													</ul>
+												</div>
+												<div id="under">
+													<div class="under-content">
+														<h1>想更详细的了解我？</h1>
+														<p>下载简历，打我电话找我吧</p>
+													</div>
+												</div>
+												<div id="footer">
+													<hr>
+													<div class="footer-content">
+														<p>模板来自<span>start Bootstrap.</span></p>
+													</div>
+												</div>
+											</body>
+										</html>
