@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul class="ct">
+			<li>这里是</li>
+			<li>饥人谷</li>
+			<li>前端6班</li>
+		</ul>
+		<input class="ipt-add-content" placeholder="添加内容" />
+		<button id="btn-add-start">开头添加</button>
+		<button id="btn-add-end">结尾添加</button>
+		<script>
+			var oul = document.querySelector(".ct");
+			var oipt = document.querySelector(".ipt-add-content");
+			var obtnStart = document.getElementById("btn-add-start");
+			var obtnEnd = document.getElementById("btn-add-end");
+			var firtchlid;
+			var rexp = /^\s/;
+			function repeat(newdom) {
+				if (!oipt.value) {
+					alert("请输入内容");
+					return false;
+				} else if (rexp.test(oipt.value)) {
+					alert("首字符不能为空格");
+					return false;
+				} else {
+					newdom = document.createElement("li");
+					newdom.innerText = oipt.value;
+					return newdom;
+				}
+			}
+			obtnEnd.onclick = function() {
+				var newdom;
+				if (repeat(newdom)) {
+					oul.appendChild(repeat(newdom));
+				}
+			}
+			obtnStart.onclick = function() {
+				var newdom;
+				if (repeat(newdom)) {
+					firtchlid=oul.firstElementChild;
+					oul.insertBefore(repeat(newdom),firtchlid);
+				}
+			}
+			oul.onclick=function(e){
+				console.log(e.target.innerText);
+			}
+		</script>
+	</body>
+</html>
