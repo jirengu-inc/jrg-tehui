@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Task11-1</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+  body,ul,li,p{
+  	margin:0;
+  	padding:0;
+  }
+  body{
+  	font:24px/1.5 "微软雅黑";
+  }
+  .nav{
+  	background-color: #ccc;
+  	height:50px;
+  	line-height:50px;
+  }
+  li{
+       list-style: none;
+
+}    
+    .nav>ul:after{
+    	content:"";
+    	display:block;
+    	clear:both;
+    	
+    }
+   li.course{
+   	position:relative;
+   	float:left;
+    margin: 0 20px 0 20px;
+   }
+	
+	a{
+		text-decoration: none;
+		color:#333;
+		padding-left: 20px;
+		padding-right:20px;
+	}
+	li.course:hover,li.drop:hover{
+		
+		background-color: #828282;
+	}
+	ul.subject{
+		position:absolute;
+		display:none;
+	}
+
+    li.course:hover .subject{
+    	display:block;
+    	border:1px solid #ccc;
+    }
+
+</style>
+</head>
+<body>
+    <div class="nav">
+    	<ul>
+    		<li class="course"><a href="">前端</a>
+    			<ul class="subject"> 
+    				<li class="drop"><a href="">JavaScript</a></li>
+                    <li class="drop"><a href="">CSS</a></li>
+                    <li class="drop"><a href="">HTML</a></li>
+                </ul>
+            </li>        
+    		<li class="course"><a href="">服务端</a>
+    			<ul class="subject"> 
+    				<li class="drop"><a href="">Node</a></li>
+                    <li class="drop"><a href="">PHP</a></li>
+                    <li class="drop"><a href="">Java</a></li>
+                </ul>
+            </li>     
+             <li class="course"><a href="">前端工具</a>
+    			<ul class="subject"> 
+    				<li class="drop"><a href="">Sublime</a></li>
+                    <li class="drop"><a href="">Webstorm</a></li>
+                    <li class="drop"><a href="">Git</a></li>
+                </ul>
+            </li>      
+    		  <li class="course"><a href="">HTML</a>
+    		  	<ul class="subject">
+    		  	</ul>
+    		 </li>
+    		 <li class="course"><a href="">NODE</a>
+    		  	<ul class="subject">
+    		  	</ul>
+    		 </li>
+    		
+    		</ul>
+    </div>
+</body>
+</html>
