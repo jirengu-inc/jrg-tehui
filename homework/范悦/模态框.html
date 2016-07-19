@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+	<style>
+	.ct{
+		border:1px solid #ccc;
+		position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        width: 400px;
+        border-radius: 3px;
+        background: #fff;
+        z-index: 100;
+      
+	}
+	.modal-1{
+		display:none;
+	}
+
+	.close{
+		float:right;
+		margin:0px 10px 3px 5px;
+		font-size:20px;
+	}
+	.ico{
+		float:right;
+		margin:5px;
+	}
+	a{
+		text-decoration:none;
+	}
+	.cover{
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: 0.4;
+        z-index: 99;
+    
+	}
+	</style>
+	<button class="btn">点我1</button>
+	<div id="modal" class="modal-1">
+		<div class="cover"></div>
+		<div class="ct">
+			
+			<h3 class="head">我是标题1<a class="close" href="#">x</a>
+			</h3>		
+			<hr>
+			<p>我是内容1</p>
+			<p>我是内容2</p>
+			<hr>
+			<div class="ico">
+			<a class="close2" href="#">取消</a>
+			<a class="" href="#">确定</a>
+			</div>
+			
+		</div>
+	</div>
+	<script>
+		var modal = document.querySelector('#madal'),
+			btn = document.querySelector('.btn'),
+			modal1 = document.querySelector('.modal-1'),
+			ct = document.querySelector('.ct');
+
+			btn.addEventListener('click',function (e){
+				showmodal(modal1);
+			});
+			ct.addEventListener('click',function (e){
+			/*	e.stopPropagation();*/
+				if(hasClass(e.target,'close')||hasClass(e.target,'close2')){
+					hidemodal(modal1);
+
+				}
+			});
+			document.body.addEventListener('click',function (e){
+				if(hasClass(e.target,'cover')){
+					hidemodal(modal1);
+				}
+			});
+
+
+
+			function showmodal (modal){
+				modal.style.display = 'block';
+			};
+			function hidemodal (modal){
+				modal.style.display = 'none';
+			};
+			function hasClass(el, cls) {
+   				 var reg = new RegExp('\\b' + cls + '\\b', 'g');
+   					 return reg.test(el.className);
+			};
+	</script>
+</body>
+</html>
