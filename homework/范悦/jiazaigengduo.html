@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+  <style>
+  li,ul{
+  	padding:0;
+  	margin:0;
+  }
+	#ct li{
+		list-style:none;
+		width:100%;
+		height:30px;
+		border:1px solid black;
+		margin-bottom:10px;
+	}
+	#btn{
+		text-align:center;
+		width:90px;
+		height:30px;
+	}
+
+  </style>
+<body>
+    <ul id="ct">
+    	<li>1</li>
+    	<li>2</li>
+    </ul>
+    <button id="btn">加载更多</button>
+
+    <script>
+    	function ajax(opts){
+	     
+	     var xmlhttp = new XMLHttpRequest();
+	     xmlhttp.onreadystatechange=function(){
+	     	if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+	     		var Info = JSON.parse(xmlhttp.responseText);
+	     		console.log(xmlhttp.responseText);
+	     		opts.success(Info);
+	     	}
+	     };
+	     var datastr = '';
+	     for(var key in opts.data){
+	     	datastr += key + '=' + opts.data[key] + '&';
+	     };
+	     datastr = datastr.substr(0,datastr.length-1);
+	     if(opts.type === 'post'){
+	     	xmlhttp.open(opts.type, opts.url ,true);
+	     	xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    		xmlhttp.send(datastr);
+	     };
+	     if(opts.type === 'get'){
+    		xmlhttp.open(opts.type,opts.url + '?' + datastr,true);
+    		xmlhttp.send();
+    	};
+};
+	var start = 3,
+		len = 2;
+	var ct = document.getElementById('ct');
+
+	document.querySelector('#btn').addEventListener('click', function(){
+	    ajax({
+	        url: '/getMore',   
+	        type: 'get',              
+	        data: {
+	            start:start,
+	            len:len
+	            
+	        },
+	        success: function(Info){
+	        	todo(Info);
+	        },
+	        error: function(){
+	           console.log('出错了');
+	        }
+	    });
+});
+
+	function todo(Info){
+		
+		for(var i = 0;i<Info.datas.length;i++){
+			var newli = document.createElement('li');
+			newli.innerText = Info.datas[i];
+			ct.appendChild(newli)	;		
+		};
+
+	};
+    </script>
+</body>
+</html>
