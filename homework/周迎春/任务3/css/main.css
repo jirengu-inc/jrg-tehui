@@ -1,0 +1,352 @@
+body,html,ul,li,p,h1,h2,h3,h4{
+	padding: 0;
+	margin:0;
+}
+body{
+	font: 14px/1.5 '微软雅黑';
+}
+body,html{
+	height: 100%;
+	width: 100%;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.layout{
+	width: 1200px;
+	margin: 0 auto;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/* 导航 */
+#header{
+	background-color: #333;
+	height: 50px;
+}
+#header .logo{
+    float: left;
+}
+#header .logo img{
+	width: 100px;
+}
+#header .nav{
+    float: right;
+}
+#header .nav li{
+	float: left;
+	line-height: 50px;
+	margin-left: 20px;
+}
+#header .nav a:hover{
+    color: #fed136;
+}
+/* WELCOME */
+#welcome{
+	background-image: url(../images/header-bg.jpg);
+	background-repeat:no-repeat;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	padding-top: 300px;
+}
+#welcome p{
+	font-size: 40px;
+	font-style:italic;
+}
+#welcome h1{
+	font-size: 80px;
+}
+#welcome a{
+	display: inline-block;
+	width: 220px;
+	height: 66px;
+	text-align: center;
+	line-height: 66px;
+	border-radius: 5px;
+	background-color: #fed136; 
+}
+#welcome a:hover{
+	background-color: #f6bf01;
+}
+/* services */
+#services{
+	text-align: center;
+	padding: 160px 0;
+}
+#services h2{
+	font-size: 32px;
+}
+#services .text{
+    font-size: 16px;
+    font-style: italic;
+    color: #666;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+#services .sorts li{
+	padding: 0 23px;
+	width: 350px;
+	float: left;
+	position: relative;
+}
+#services .icon-circle{
+	font-size: 94px;
+	color: #f6bf01;
+}
+#services .icon-shopping-cart{
+    font-size: 46px;
+    position: absolute;
+    left: 176px;
+    top: 24px;
+    color: #fff;
+} 
+#services .sorts h3{
+	margin: 10px 0;
+	font-size: 18px;
+}
+#services .sorts p{
+	color: #666;
+}
+/* portfolio */
+#portfolio{
+	background-color: #f7f7f7;
+	text-align: center;
+	padding: 150px 0;
+}
+#portfolio h2{
+	font-size: 32px;
+}
+#portfolio .text{
+    font-size: 16px;
+    font-style: italic;
+    color: #666;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#portfolio li{
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 360px;
+	float: left;
+	background-color: #fff;
+}
+#portfolio img{
+	width: 360px;
+	height: 260px;
+}
+#portfolio h3{
+	margin-top: 20px;
+}
+#portfolio .ads p{
+	margin-bottom: 30px;
+	font-style: italic;
+	color: #666;
+}
+/* about */
+#about{
+	position: relative;
+	padding: 160px 0;
+	text-align: center;
+}
+#about h2{
+	font-size: 32px;
+}
+#about .text{
+    font-size: 16px;
+    font-style: italic;
+    color: #666;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#about .line-time{
+	position: relative;
+}
+#about .line{
+	position: absolute;
+	top: 394px;
+	left: 50%;
+	width: 2px;
+	background-color: #f1f1f1;
+	height: 950px;
+	margin-left: -2px;
+}
+#about img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 6px solid #ccc;
+	
+}
+#about .left{
+	float: left;
+    margin-top: 100px;
+	text-align: right;
+}
+#about .left .humble {
+	float: right;
+}
+#about .desp{
+	float: right;
+	width: 350px;
+	margin-right: 100px;
+	margin-left: 64px;
+}
+#about .right{
+	float: left;
+	text-align: left;
+	margin-top: 100px;
+}
+#about .right .humble{
+	float: left;
+	margin-left: 514px;
+}
+/* team */
+#team{
+	padding: 160px 0;
+	background-color: #f7f7f7;
+	text-align: center;
+}
+#team h2{
+	font-size: 32px;
+}
+#team .text{
+    font-size: 16px;
+    font-style: italic;
+    color: #666;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#team .kay li{
+	float: left;
+	margin-left: 120px;
+}
+#team img{
+	width: 225px;
+	height: 225px;
+	border: 8px solid #fff;
+	border-radius: 50%;
+}
+#team h3{
+	margin-top: 30px;
+}
+#team .lead{
+	color: #666;
+	margin-bottom: 15px;
+}
+#team .icon-twitter{
+	font-size: 30px;
+	color: #333;
+}
+#team .ipsum{
+	width: 740px;
+	color: #666;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+/* 图标 */
+#envato{
+	padding: 60px 0;
+}
+#envato ul{
+	margin-left: -120px;
+}
+#envato li{
+	float: left;
+	margin-left: 120px;
+}
+/* contact */
+#contact{
+	
+	background-image: url(../images/map.png);
+	background-color: #333;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 160px 0;
+}
+#contact h2{
+	font-size: 32px;
+	color: #fff;
+}
+#contact .text{
+    font-size: 16px;
+    font-style: italic;
+    color: #999;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#contact .input{
+	float: left;
+}
+#contact .input div{
+	width: 556px;
+	height: 62px;
+	background-color: #fff;
+	margin-bottom: 24px;
+	border-radius: 5px;
+	line-height: 62px;
+	text-align: left;
+}
+#contact .your-name input{
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-left: 20px;
+}
+#contact .textarea{
+	width: 554px;
+	height: 234px;
+	background-color: #fff;
+	float: left;
+	border-radius: 5px;
+	margin-left: 30px;
+	text-align: left;
+} 
+#contact .textarea textarea{
+	border: none;
+	outline: none;
+	font-size: 18px;
+	margin-top: 18px;
+	margin-left: 24px;	
+	font-family: '微软雅黑';
+	height: 205px;
+	width: 520px;
+}
+#contact .btn{
+	display: block;
+	width: 230px;
+	height: 66px;
+	background-color: #f6bf01;
+	text-align: center;
+	line-height: 66px;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+/* 底部 */
+#footer{
+	padding:40px 0;
+}
+#footer .move{
+    float: left;
+    margin-left: 160px;
+} 
+#footer i{
+	margin-left: 20px;
+	color: #333;
+	font-size: 20px;
+}
+
+#footer .privacy a{
+	color: #f6bf01;
+	margin-left: 20px;
+}
+#footer .privacy a:hover{
+	border-bottom: 1px solid #f6bf01;
+}
