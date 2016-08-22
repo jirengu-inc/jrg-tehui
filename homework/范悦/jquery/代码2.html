@@ -42,9 +42,6 @@
 		border-radius:4px;
 		border-bottom:none;
 	}
-
-
-
 	.cen{
 		text-align:center;
 	}
@@ -97,13 +94,13 @@
 		border:1px solid red;
 		padding:10px;
 		background-color:#fff;
-
 	}
 	.active{
 		background-color:#ccc;
 	}
 	.active a{
 		color:red;
+		opacity:none;
 	}
 	.covershow .cover{
 		display:block;
@@ -114,21 +111,20 @@
 	.boss{
 		margin-bottom:50px;
 	}
-
 </style>
 </head>
 <body>
 	<div class="mod-tab">
 		<div class="nav">
 			<ul class="nav-cld">
-				<li><a href="">热门</a></li>
+				<li class='active'><a href="">热门</a></li>
 				<li><a href="">珠宝首饰</a></li>
 				<li><a href="">奢侈品</a></li>
 			</ul>
 		</div>
 		<ul class="boss">
 			<li>
-				<ul class="ct-cld">
+				<ul class="ct-cld panel">
 				<li>
 					<div class="cover">
 						<div class="cov-cld"><a href="">立即抢购</a></div>
@@ -323,18 +319,18 @@
 				</ul>
 			</li>
 		</ul>
-</div>
-<div class="mod-tab">
+	</div>
+	<div class="mod-tab">
 		<div class="nav">
 			<ul class="nav-cld">
-				<li><a href="">热门</a></li>
+				<li class='active'><a href="">热门</a></li>
 				<li><a href="">珠宝首饰</a></li>
 				<li><a href="">奢侈品</a></li>
 			</ul>
 		</div>
 		<ul class="boss">
 			<li>
-				<ul class="ct-cld">
+				<ul class="ct-cld panel">
 				<li>
 					<div class="cover">
 						<div class="cov-cld"><a href="">立即抢购</a></div>
@@ -532,8 +528,6 @@
 	</div>
 	<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
     <script>
-    	
-
     	$('.mod-tab').on('click','.nav li',function(){
     		event.preventDefault();
     		var idx = $(this).index();
@@ -543,58 +537,12 @@
     		$(this).parents('.mod-tab').find('.ct-cld').removeClass('panel');
     		$(this).parents('.mod-tab').find('.ct-cld').eq(idx).addClass('panel');
     	});
-
     	$('.boss').on('mouseover','.ct-cld li',function(){
     		$(this).addClass('covershow');
     	})
     	$('.boss').on('mouseout','.ct-cld li',function(){
     		$(this).removeClass('covershow');
     	})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    	var products = [
-    {
-        img: 'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg',
-        name: '珂兰 黄金手 猴哥款',
-        price: '￥405.00'
-    },{
-        img: 'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg',
-        name: '珂兰 黄金转运珠 猴哥款',
-        price: '￥100.00'
-    },{
-        img: 'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg',
-        name: '珂兰 黄金手链 3D猴哥款',
-        price: '￥45.00'
-    }
-];
-
-
     </script>
 </body>
 </html>
