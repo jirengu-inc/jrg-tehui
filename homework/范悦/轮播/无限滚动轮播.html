@@ -23,18 +23,21 @@
 		height:300px;
 		position:relative;
 		overflow:hidden;
+
 	}
 	.img-ct{		
 		position:absolute;
 		
 	}
 
-	.img-ct .block{
+	.img-ct:after{
+		clear:both;
+		content:'';
 		display:block;
 	}
 	.img-ct li{
-		position:absolute;
-		display:none;
+		float:left;
+
 	}
 	.img-ct img{
 		width:500px;
@@ -52,15 +55,16 @@
 		margin-top:-20px;
 		background-color:#4E443C;
 		color:#fff;
+		opacity:0.5;
+	}
+	.arrow:hover{
+		opacity:1;
 	}
 	.pre{
 		left:10px;
 	}
 	.next{
 		right:10px;
-	}
-	.active{
-
 	}
 	.nav li{
 		display:inline-block;
@@ -92,12 +96,14 @@
 		<a class = 'pre  arrow' href="#"><</a>
 		<a class = 'next arrow' href="#">></a>
 		<ul class="nav">
-			<li></li>
+			<li class = 'setcolor'></li>
 			<li></li>
 			<li></li>
 			<li></li>
 		</ul>
     </div>
+
+
 </body>
 <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
 <script>
@@ -109,54 +115,82 @@
 		imgWidth = $items.width(),
 		imgCount = $ct.children().size();
 
-		//$ct.prepend($items.last().clone()),
-		//$ct.append($items.first().clone());
-		//imgnewwidth = $ct.children().size();
-		//$ct.css({width:imgnewwidth*imgWidth})
+		$ct.prepend($items.last().clone()),
+		$ct.append($items.first().clone());
+		imgnewwidth = $ct.children().size();
+		$ct.css({left:0-imgWidth,width:imgnewwidth*imgWidth})
 
-	var curIdx = 0,
-		isAnimate = false;
-		$next.on('click',function(){
-			playnext();		
-		});
-		$pre.on('click',function(){
-			playpre();
-		});
-		$nav.children().on('click',function(){
-			play($(this).index())		
+
+		var curIdx = 0,
+			lock = false;
+
+		$('.ct').on('click',$next,function(){
+			playnext();
 		})
-			function playnext(){
-				play((curIdx+1)%imgCount)
+		$('.ct').on('click',$pre,function(){
+			playpre();
+		})
+		
+		$('.nav').find('li').on('click',function(){
+			var idx = $(this).index();
+			if(idx>curIdx){
+				playnext(idx-curIdx);
+			}else if(idx<curIdx){
+				playpre(curIdx-idx);
 			}
-			function playpre(){
-				play((imgCount+curIdx-1)%imgCount)
-			}
-			function play(idx){
-				if(isAnimate) return;
-				isAnimate = true;
-				$items.eq(curIdx).fadeOut(500);
-				$items.eq(idx).fadeIn(500, function(){
-					isAnimate = false;
-				});
+		});
+
+		function playnext(idx){
+			var mov = idx || 1;
+			if(!lock){			
+			lock = true;
+			$ct.animate({left: '-='+(mov*imgWidth)},function(){
+				/*curIdx = (mov+curIdx)%imgCount;
+				if(curIdx === 0){
+					$ct.css({left:0-imgWidth});
+				}*/
+				curIdx+=mov;
+				if(curIdx === imgCount){
+					$ct.css({left:0-imgWidth});
+					curIdx = 0;
+				}
+				lock = false;
+				setnav();				
+			})
 				
-				curIdx = idx;
-				setnav();
-			}
-			play(0)
-			autoplay()
-
-
-
-			function setnav(){
-				var idx = curIdx;
-				$nav.children().removeClass('setcolor');
-				$nav.children().eq(idx).addClass('setcolor');
-			}
-			function autoplay(){
+			};
+		};
+		//autoplay();
+		function playpre(idx){
+			var mov = idx || 1;
+			if(!lock){			
+			lock = true;
+			$ct.animate({left: '+='+(mov*imgWidth)},function(){
+				/*curIdx = (imgCount + curIdx-mov)%imgCount;
+				if(curIdx === imgCount-1){
+					$ct.css({left:0-imgWidth*imgCount});
+				}*/
+				curIdx-=mov;
+				if(curIdx === (-1)){
+					$ct.css({left:0-imgWidth*imgCount});
+					curIdx = 3;
+				}
+				lock = false;
+				setnav();			
+			})
+				
+			};
+		};
+		
+		function setnav(){
+			$nav.find('li').removeClass('setcolor');
+			$nav.find('li').eq(curIdx).addClass('setcolor');
+		}
+				
+		function autoplay(){
 				clock = setInterval(function(){
 					playnext();
 				}, 2000);	
 			}
-		
 </script>
 </html>
