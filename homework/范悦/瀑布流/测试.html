@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<style>
+	.ct{
+		position:relative;
+	}
+	.item{
+		width:200px;
+		margin-right: 10px;
+		margin-top: 10px;
+		position:absolute;
+		transition: all 1s;
+	}
+	.h1{
+		height:200px;
+		background-color:green;
+	}
+	.h2{
+		height:400px;
+		background-color:red;
+	}
+	.h3{
+		height:300px;
+		background-color:blue;
+	}
+
+</style>
+<body>
+    	<div class="ct">
+	<div class="item h1">1</div>
+    <div class="item h1">2</div>
+    <div class="item h2">3</div>
+    <div class="item h3">4</div>
+    <div class="item h2">5</div>
+    <div class="item h1">6</div>
+    <div class="item h2">7</div>
+    <div class="item h3">8</div>
+    <div class="item h2">9</div>
+    <div class="item h3">10</div>
+    <div class="item h2">11</div>
+    <div class="item h3">12</div>
+    <div class="item h1">13</div>
+    <div class="item h3">14</div>
+	</div>
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+<script>
+	var nodeW = $('item').outerWidth(true),
+		colNum = $(window).width()/nodeW,
+		colsumHeight = [];
+
+	for(var i =0;i<colNum;i++){
+		colsumHeight.push(0);
+	};
+
+	$('item').each(function(){
+		var $cur = $(this);
+		var idx = 0,
+			minH = colsumHeight[idx];
+
+		for(var i =0;i<colsumHeight.length;i++){
+			if(colsumHeight[i]<minH){
+				idx = i;
+				minH = colsumHeight[i];
+			}
+		}
+
+
+		$cur.css({
+			left:nodeW*idx,
+			top:minH
+		});
+		colsumHeight[idx] = $cur.outerHeight(true) + colsumHeight[idx]; 
+	});
+
+
+</script>
+</html>

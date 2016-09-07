@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<style>
+	p{
+		margin:50px;
+	}
+	a{
+		text-decoration:none;
+	}
+	a,.go-top{
+		border:1px solid red;
+		padding:15px;
+		color:red;
+		position:fixed;
+		bottom:10px;
+		right:10px;
+		cursor: pointer;
+		display:none;
+	}
+</style>
+<body>
+    <p>内容1</p>
+    <p>内容2</p>
+    <p>内容3</p>
+    <p>内容4</p>
+    <p>内容5</p>
+    <p>内容6</p>
+    <p>内容7</p>
+    <p>内容8</p>
+    <p>内容9</p>
+    <p>内容10</p>
+    <p>内容11</p>
+    <p>内容12</p>
+    <p>内容13</p>
+    <p>内容14</p>
+    <p>内容1</p>
+    <p>内容2</p>
+    <p>内容3</p>
+ 	<p>内容11</p>
+    <p>内容12</p>
+    <p>内容13</p>
+    <p>内容14</p>
+    
+</body>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+	
+
+
+	/*$(window).on('scroll',function(){
+		if(isVisible($('p').eq(16))){
+		}	
+	})
+	
+	function isVisible($node){
+ 		var $node = $node;
+ 		var scrollTop = $(window).scrollTop(),
+ 			winH = $(window).height(),
+ 			noH  = 	$node.offset().top;
+
+ 			if((scrollTop + winH) > noH){
+ 				gotop();
+ 			}else{
+ 				hidtop();
+
+ 			}
+ 	}
+	function gotop(){
+		$('.gotop').show()
+	}
+	function hidtop(){
+		$('.gotop').hide()
+	}
+	$('.gotop').on('click',function(){
+		$(window).scrollTop(0);
+	})
+*/
+	
+
+	var $gotop = $('<div class = "go-top">回到顶部</div>');
+		$('body').append($gotop);
+
+		$(window).on('scroll',function(){
+			var scrollTop = $(this).scrollTop();
+			if(scrollTop>100){
+				$gotop.show();
+			}else{
+				$gotop.hide();
+			}
+
+		})
+
+		$gotop.on('click',function(){
+			$(window).scrollTop(0);
+		})
+ 		
+
+ 		var a ={
+ 			init:function(){
+ 				console.log(this)
+ 			}
+ 		}
+</script>
+</html>
