@@ -65,7 +65,7 @@
 	.next{
 		right:10px;
 	}
-	.nav li{
+	.carousel-nav li{
 		display:inline-block;
 		width:20px;
 		height:5px;
@@ -73,13 +73,13 @@
 		background-color:#fff;
 		cursor: pointer;
 	}
-	.nav{
+	.carousel-nav{
 		position:absolute;
 		bottom:20px;
 		left:50%;
 		transform: translateX(-50%);
 	}
-	.nav .setcolor{
+	.carousel-nav .setcolor{
 		background-color:#666;
 	}
 	html,body,.ct,.ct .img-ct,.cover,.item{
@@ -108,7 +108,7 @@
     	</ul>
 		<a class = 'pre  arrow' href="#"><</a>
 		<a class = 'next arrow' href="#">></a>
-		<ul class="nav">
+		<ul class="carousel-nav">
 			<li class = 'setcolor'></li>
 			<li></li>
 			<li></li>
@@ -122,7 +122,7 @@
 		$items = $ct.children(),
 		$pre = $('.pre'),
 		$next = $('.next'),
-		$nav = $('.nav'),
+		$nav = $('.carousel-nav'),
 		imgWidth = $(window).width(),
 		imgCount = $ct.children().size();
 
@@ -230,5 +230,12 @@
 					$cover.css('background-image' , 'url('+ imgUrl +')');	
 					$node.data('isBgSet', true);						
 				}
+
+
+
+
+
+
+
 </script>
 </html>
