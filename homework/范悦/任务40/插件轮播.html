@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Examples</title>
+<title>插件轮播</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="" rel="stylesheet">
+</head>
 <style>
 	html,body,ul,li{
 		padding:0;
@@ -84,9 +85,8 @@
 		background-color:#666;
 	}
 </style>
-</head>
 <body>
-    <div class="ct">
+        <div class="ct">
     	<ul class="img-ct">
     		<li><a href="#"><img src="http://img1.gamersky.com/image2016/08/20160821zj_235_13/gamersky_05origin_09_20168211534C71.jpg" alt=""></a></li>
     		<li><a href="#"><img src="http://img1.gamersky.com/image2016/06/20160611_hc_44_9/gamersky_229origin_457_201661118318E5.jpg" alt=""></a></li>
@@ -102,36 +102,56 @@
 			<li></li>
 		</ul>
     </div>
-
-
+        <div class="ct">
+    	<ul class="img-ct">
+    		<li><a href="#"><img src="http://img1.gamersky.com/image2016/08/20160821zj_235_13/gamersky_05origin_09_20168211534C71.jpg" alt=""></a></li>
+    		<li><a href="#"><img src="http://img1.gamersky.com/image2016/06/20160611_hc_44_9/gamersky_229origin_457_201661118318E5.jpg" alt=""></a></li>
+    		<li><a href="#"><img src="http://img1.gamersky.com/image2016/07/20160708_djy_248_2/gamersky_02origin_03_201678172745A.jpg" alt=""></a></li>
+    		<li><a href="#"><img src="http://img1.gamersky.com/image2016/08/20160811_djy_248_5/gamersky_02origin_03_201681117146A3.jpg" alt=""></a></li>
+    	</ul>
+		<a class = 'pre  arrow' href="#"><</a>
+		<a class = 'next arrow' href="#">></a>
+		<ul class="nav">
+			<li class = 'setcolor'></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+    </div>
 </body>
 <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
 <script>
-	var $ct = $('.img-ct'),
-		$items = $ct.children(),
-		$pre = $('.pre'),
-		$next = $('.next'),
-		$nav = $('.nav'),
-		imgWidth = $items.width(),
-		imgCount = $ct.children().size();
+	$.fn.carousel=function(){
+	$(this).each(function(){
 
-		$ct.prepend($items.last().clone()),
-		$ct.append($items.first().clone());
-		imgnewwidth = $ct.children().size();
-		$ct.css({left:0-imgWidth,width:imgnewwidth*imgWidth})
+	    init.call(this)
+	})
 
+	function init(){
+		var $ct = $(this).find($('.img-ct')),
+			$items = $ct.children(),
+			$pre = $(this).find($('.pre')),
+			$next = $(this).find($('.next')),
+			$nav = $(this).find($('.nav')),
+			imgWidth = $items.width(),
+			imgCount = $ct.children().size();
 
-		var curIdx = 0,
-			lock = false;
+			$ct.prepend($items.last().clone()),
+			$ct.append($items.first().clone());
+			imgnewwidth = $ct.children().size();
+			$ct.css({left:0-imgWidth,width:imgnewwidth*imgWidth})
 
-		$('.ct').on('click',$next,function(){
+			var curIdx = 0,
+				lock = false;
+		$(this).on('click',$next,function(){
 			playnext();
 		})
-		$('.ct').on('click',$pre,function(){
+		$(this).on('click',$pre,function(){
+			console.log($pre)
 			playpre();
 		})
 		
-		$('.nav').find('li').on('click',function(){
+		$nav.find('li').on('click',function(){
 			var idx = $(this).index();
 			if(idx>curIdx){
 				playnext(idx-curIdx);
@@ -170,7 +190,7 @@
 				if(curIdx === imgCount-1){
 					$ct.css({left:0-imgWidth*imgCount});
 				}
-				curIdx-=mov;
+				// curIdx-=mov;
 				// if(curIdx === (-1)){
 				// 	$ct.css({left:0-imgWidth*imgCount});
 				// 	curIdx = 3;
@@ -192,5 +212,10 @@
 					playnext();
 				}, 2000);	
 			}
+	}
+
+}
+
+$('.ct').carousel();
 </script>
 </html>
