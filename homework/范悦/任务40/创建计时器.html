@@ -75,161 +75,61 @@
 	//曝光加载组件
 	//
 
-// var Expouse=(function(){
-// 	function bind($el,fn){
-// 		$(window).on('scroll',function(){
-// 			if(!isShow($el)){
-// 				return
-// 			};
-// 			if(isShow($el)){
-// 			fn.call($el);
-// 			};
-// 		})
-// 	}
-// 	function one($el,fn){
-// 		var stop = true;
+var Expouse=(function(){
+	function bind($el,fn){
+		$(window).on('scroll',function(){
+			if(!isShow($el)){
+				return
+			};
+			if(isShow($el)){
+			fn.call($el);
+			};
+		})
+	}
+	function one($el,fn){
+		var stop = true;
 
-// 		$(window).on('scroll',function(){
-// 			if(stop===false){
-// 				return
-// 			};
-// 			if(!isShow($el)){
-// 				return
-// 			};
-// 			if(isShow($el)){
-// 			fn.call($el);
-// 			stop=false;
-// 			};
-// 		})
+		$(window).on('scroll',function(){
+			if(stop===false){
+				return
+			};
+			if(!isShow($el)){
+				return
+			};
+			if(isShow($el)){
+			fn.call($el);
+			stop=false;
+			};
+		})
 		
-// 	}
-// 	function isShow($el){
-//     var scrollTop = $(window).scrollTop(),
-//         winH      = $(window).height(),
-//         top       = $el.offset().top;
-//     if((scrollTop+winH)>top){
-//         return true
-//     }else{
-//         return false
-//     }
-// 	}
-// 	return{
-// 		bind:bind,
-// 		one:one
-// 	}
-// })()
+	}
+	function isShow($el){
+    var scrollTop = $(window).scrollTop(),
+        winH      = $(window).height(),
+        top       = $el.offset().top;
+    if((scrollTop+winH)>top){
+        return true
+    }else{
+        return false
+    }
+	}
+	return{
+		bind:bind,
+		one:one
+	}
+})()
 
-// var $target = $('.target');
+var $target = $('.target');
+
 // Expouse.bind($target, function(){
 //     console.log($(this));    // $target
 // });
 
-// Expouse.one($target, function(){
-//     console.log($(this));    // $target
-// })
+Expouse.one($target, function(){
+    console.log($(this));    // $target
+})
 	
 
-
-
-
-//插件轮播
-//
-//
-
- $.fn.carousel=function(){
-	$(this).each(function(){
-	    init.call(this);
-	});
-
-	init:function(){
-		var $ct = $(this).find($('.img-ct')),
-			$items = $ct.children(),
-			$pre = $(this).find($('.pre')),
-			$next = $(this).find($('.next')),
-			$nav = $(this).find$(('.nav')),
-			imgWidth = $items.width(),
-			imgCount = $ct.children().size();
-
-			$ct.prepend($items.last().clone()),
-			$ct.append($items.first().clone());
-			imgnewwidth = $ct.children().size();
-			$ct.css({left:0-imgWidth,width:imgnewwidth*imgWidth})
-
-			var curIdx = 0,
-				lock = false;
-			$('.ct').on('click',$next,function(){
-			playnext();
-		})
-		$('.ct').on('click',$pre,function(){
-			playpre();
-		})
-		
-		$('.nav').find('li').on('click',function(){
-			var idx = $(this).index();
-			if(idx>curIdx){
-				playnext(idx-curIdx);
-			}else if(idx<curIdx){
-				playpre(curIdx-idx);
-			}
-		});
-
-		function playnext(idx){
-			var mov = idx || 1;
-			if(!lock){			
-			lock = true;
-			$ct.animate({left: '-='+(mov*imgWidth)},function(){
-				/*curIdx = (mov+curIdx)%imgCount;
-				if(curIdx === 0){
-					$ct.css({left:0-imgWidth});
-				}*/
-				curIdx+=mov;
-				if(curIdx === imgCount){
-					$ct.css({left:0-imgWidth});
-					curIdx = 0;
-				}
-				lock = false;
-				setnav();				
-			})
-				
-			};
-		};
-		autoplay();
-		function playpre(idx){
-			var mov = idx || 1;
-			if(!lock){			
-			lock = true;
-			$ct.animate({left: '+='+(mov*imgWidth)},function(){
-				/*curIdx = (imgCount + curIdx-mov)%imgCount;
-				if(curIdx === imgCount-1){
-					$ct.css({left:0-imgWidth*imgCount});
-				}*/
-				curIdx-=mov;
-				if(curIdx === (-1)){
-					$ct.css({left:0-imgWidth*imgCount});
-					curIdx = 3;
-				}
-				lock = false;
-				setnav();			
-			})
-				
-			};
-		};
-		
-		function setnav(){
-			$nav.find('li').removeClass('setcolor');
-			$nav.find('li').eq(curIdx).addClass('setcolor');
-		}
-				
-		function autoplay(){
-				clock = setInterval(function(){
-					playnext();
-				}, 2000);	
-			}
-	}
-
-}
-
-$('.ct').carousel();
 
 </script>
 </html>
