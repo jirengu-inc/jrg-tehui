@@ -90,6 +90,7 @@ li{
 	 }
 	//当元素正在拖动的时候碰到了该容器时执行的代码（还没松鼠标）
 	function drag(ev){
+		ev.preventDefault();
     	ev.dataTransfer.setData("Text",ev.target.id);
 	}
 	//当元素开始拖动的时候设置元素的数据的数据类型和值
