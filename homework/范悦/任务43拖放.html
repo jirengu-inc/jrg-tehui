@@ -15,9 +15,11 @@ ul,li,p{
 }
 li{
 	list-style:none;
+	line-height: 35px;
+
 }
 	.box1{
-		height:70px;
+		min-height:40px;
 		width: 100%;
 		border:1px solid #aaa;
 		margin-bottom:50px;
@@ -26,77 +28,50 @@ li{
 		float: left;
 	}
 	#box2{
-		height:70px;
+		min-height:40px;
+
 		width: 100%;
 		border:1px solid #aaa;
 	}
-	#box2:after{
+	ul:after{
 		clear: both;
 		display: block;
 		content: '';
 	}
-	div{
-		margin-top:15px;		
+	li{
+		margin-top:15px;
+		margin-bottom:15px;		
 		text-align:center;
 		margin-left: 70px;
 		width:70px;
 		height:40px;
 		border: 1px solid black;
 		background: #eee;
+		float: left;
 	}
 	div p{
 		line-height: 40px;
 	}
-
+	ul:after{
+		display: block;
+		content:'';
+		clear: both;
+	}
 </style>
 <body>
 	<h1>全部</h1>
     <ul class="box1" ondragover="allowDrop(event)" ondrop="drop(event)">
-    	<li>
-    		<div draggable="true" id='military' ondragstart="drag(event)">
-    			<p>军事</p>
-    		</div>	
-    	</li>
-    	<li>
-    		<div draggable="true" id='entertainment' ondragstart="drag(event)">
-    			<p>娱乐</p>
-    		</div>
-    		
-    	</li>
-    	<li>
-    		<div draggable="true" id='documentary' ondragstart="drag(event)">
-    			<p>纪实</p>
-    		</div>   		
-    	</li>
-    	<li>
-    		<div draggable="true" id='game' ondragstart="drag(event)">
-    			<p>游戏</p>
-    		</div>   		
-    	</li>
-    	<li>
-    		<div draggable="true" id='douyutv' ondragstart="drag(event)">
-    			<p>直播</p>
-    		</div>    		
-    	</li>
+    	<li draggable="true" id='military' ondragstart="drag(event)">军事</li>
+    	<li draggable="true" id='military' ondragstart="drag(event)">娱乐</li>
+    	<li draggable="true" id='military' ondragstart="drag(event)">纪实</li>
+    	<li draggable="true" id='military' ondragstart="drag(event)">游戏</li>
+    	<li draggable="true" id='military' ondragstart="drag(event)">直播</li>	
     </ul>
     <h1>订阅</h1>
     <ul id="box2"  ondrop="drop(event)">
 
     </ul>
-
-    <div class="d"></div>
 </body>
-<style>
-	.d{
-		width:100px;
-		height:100px;
-		border-radius: 50%;
-		border-top:15px solid rgba(255, 255, 255, 0.2);
-		border-left:15px solid;
-		border-bottom:15px solid rgba(255, 255, 255, 0.2);
-		border-right:15px solid rgba(255, 255, 255, 0.2);
-	}
-</style>
 <script>
 	 function allowDrop(ev){
 	 	ev.preventDefault();
