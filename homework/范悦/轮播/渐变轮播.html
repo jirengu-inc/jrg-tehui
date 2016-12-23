@@ -132,6 +132,7 @@
 				play((imgCount+curIdx-1)%imgCount)
 			}
 			function play(idx){
+				// console.log(idx)
 				if(isAnimate) return;
 				isAnimate = true;
 				$items.eq(curIdx).fadeOut(500);
@@ -140,18 +141,18 @@
 				});
 				
 				curIdx = idx;
-				setnav();
+				// setnav();
 			}
 			play(0)
-			autoplay()
+			//autoplay()
 
 
 
-			function setnav(){
-				var idx = curIdx;
-				$nav.children().removeClass('setcolor');
-				$nav.children().eq(idx).addClass('setcolor');
-			}
+			// function setnav(){
+			// 	var idx = curIdx;
+			// 	$nav.children().removeClass('setcolor');
+			// 	$nav.children().eq(idx).addClass('setcolor');
+			// }
 			function autoplay(){
 				clock = setInterval(function(){
 					playnext();

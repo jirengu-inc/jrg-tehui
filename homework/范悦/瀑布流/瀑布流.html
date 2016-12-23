@@ -11,6 +11,7 @@
 <style>
 	.ct{
 		position:relative;
+		width:1000px;
 	}
 	.item{
 		width:200px;
@@ -54,46 +55,37 @@
 </body>
 <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
 <script>
-	$(function(){
-		function render(){
+	
+	function render(){
 	var nodeW   = $('.item').outerWidth(true),
 		colNum  = parseInt($(window).width()/nodeW);
 	var sortHight =[];
-
 	for(var i =0;i<colNum;i++){
 		sortHight.push(0);
 	}
-
-	$('.item').each(function(){
+	$('.item').forEach(function(){
 		var $cur = $(this);
-
 		var idx = 0,
 			minH = sortHight[0];
-
 		for(var i = 0;i<sortHight.length;i++){
 			if(sortHight[i] < minH){
 				idx = i;
 				minH = sortHight[i];
 			}
 		}
-
 		$cur.css({
 			left:nodeW*idx,
 			top:minH
 		});
 		sortHight[idx] = $cur.outerHeight(true) + sortHight[idx];
 		});
-		}
+	}
 		render()
-	
-
 	$(window).on('resize',function(){
 		render();
 	})
-})
-(function(){
-  console.log(1);
-})();
+
+
 	
 </script>
 </html>
