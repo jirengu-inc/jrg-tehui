@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css"> 
+		@font-face {
+	        font-family:'my-font';
+	        src: url('fonts/icomoon.eot?9e24jc');
+	        src: url('fonts/icomoon.eot?9e24jc#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?9e24jc') format('truetype'), url('fonts/icomoon.woff?9e24jc') format('woff'), url('fonts/icomoon.svg?9e24jc#icomoon') format('svg');
+	       font-weight: normal;
+	       font-style: normal;
+         }
+			body,html{
+				height:100%;
+				width:100%;
+			}
+			img{
+				font-size:0;
+				vertical-align:top;
+			}
+			body{
+				font-family:"Montserrat", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+			}
+
+
+			*{
+				box-sizing: border-box;
+			}
+
+
+
+
+			body,ul,li,h1,h2,h3,p,dl,dd{
+				margin:0;
+				padding:0;
+			}
+			li{
+				list-style:none;
+			}
+			a{
+				text-decoration:none;
+			}
+
+			body{
+				/*font:
+				color:;
+				background-color:;*/
+			}
+			.layout{
+				width: 1000px;
+				margin: 0 auto;
+			}
+
+			.clearfix:after{
+				content:"";
+				display:block;
+				clear:both;
+			}
+			
+			#header{
+
+			}
+
+			#header .ct{
+				
+			}
+
+			#header .logo{
+				float: left;
+			}
+
+			#header .nav{
+				float: right;
+			}
+
+			#header .nav li{
+				float: left;
+			}
+
+
+			#service{
+				margin-top: 30px;
+			}
+			#service .features li{
+				float: left;
+				width: 33.3%;
+				padding: 10px;
+				text-align: center;
+			}
+
+			#service .features h3{
+				font-size: 16px;
+			}
+
+			#service .features p{
+				font-size: 14px;
+				color: #ccc;
+			}
+
+
+
+
+
+
+
+
+			#header{
+				position:fixed;
+				top:0;
+				width:100%;
+				height:70px;
+				background-color:#222;
+				z-index:1;
+			}
+			#header > div{
+				width:1140px;
+				margin:0 auto;
+				height:100%;
+				
+			}
+			#header .header-content .nav-start{
+				float:left;
+				font-size:20px;
+				font-family:cursive;
+			}
+			#header .header-content .nav-start a{
+				color:#fed136;
+			}
+			#header .header-content li a:hover{
+				color:#fed136;
+			}
+			#header .header-content li{
+				line-height:70px;
+				float:right;
+				font-size:16px;
+				margin-left:32px;
+			}
+			#header .header-content li a{
+				color:#fff;
+			}
+			#header .header-content{
+				margin-left:-32px;
+			}
+			#header-we{
+				margin-top:70px;
+				width:100%;
+				height:680px;
+				display:table;
+				background:url(img/header-bg.jpg) center center;
+				background-size:cover;
+				text-align:center;
+				
+			}
+			#header-we h1{
+				font-family:cursive;
+				font-size:38px;
+				line-height:63px;
+				font-weight:100;
+				color:#fff;
+			}
+			#header-we p{
+				font-size:50px;
+				line-height:100px;
+				font-weight:200;
+				color:#fff;
+			}
+			#header-we a:hover{
+				background-color: #fec503;
+				border-color: #f6bf01;
+			}
+			#header-we a{
+				display:block;
+				width:220px;
+				line-height:70px;
+				margin:0 auto;
+				font-size:17px;
+				font-weight:700;
+				color:#fff;
+				background-color:#fed136;
+				border-radius:4px;
+			}
+			#header-we .header-we-content{
+				display:table-cell;
+				vertical-align:middle;
+			}
+			#ser-heade{
+				padding:133px 0;
+				
+			}
+			#ser-heade h2{
+				font-size:22px;
+				line-height:55px;
+				text-align:center;
+				font-weight:600;
+				
+			}
+			#ser-heade p{
+				font-size:15px;
+				line-height:30px;
+				font-family:cursive;
+				color:#777;
+				text-align:center;
+			}
+			#ser-heade .ser-content{
+				width:1140px;
+				margin:65px auto 0  auto;			
+			}
+			#ser-heade .ser-content li{
+				width:33.33%;
+				float:left;
+				padding-right:10px;
+				box-sizing:border-box;
+			}
+			#ser-heade .ser-content li div{
+				width:100px;
+				height:100px;
+				border-radius:100px;
+				background-color:#fed136;
+				margin:0 auto;
+			}
+			#ser-heade .ser-content p{
+				font-size:14px;
+				line-height:54px;
+				color:#222222;
+				
+			}
+			#ser-heade .ser-content h3{
+				font-size:13px;
+				line-height:20px;
+				font-weight:normal;
+				color:#777;
+				text-align:center;
+			}
+			#photo-content{
+				width:100%;
+				background-color:#f7f7f7;
+				padding: 150px 0px;
+			}
+			#photo-content h2{
+				font-size:22px;
+				line-height:67px;
+				text-align:center;
+				font-weight:600;
+			}
+			#photo-content p{
+				font-size:15px;
+				line-height:30px;
+				font-family:cursive;
+				color:#777;
+				text-align:center;
+				margin-bottom:60px;
+			}
+			#photo-content .ex-photo{
+				width:1140px;
+				margin:0 auto;
+				
+			}
+			#photo-content .ex-photo li{
+				margin-left:-20px;
+				margin-right:-20px;
+			}
+			#photo-content .ex-photo li >div{
+				float:left;
+				box-sizing:border-box;
+				width:33.33%;
+				padding:0 20px;
+				margin-bottom:20px;
+			}
+			#photo-content .ex-photo .min{
+				background-color:#fff;
+				padding-bottom:30px;
+			}
+			.min  a{
+				display:block;
+				position:relative;
+			}
+			.min  a:hover:before{
+				position:absolute;
+				top:0;
+				width:100%;
+				height:100%;
+				line-height:270px;
+				text-align:center;
+				font-size:50px;
+				color:#fff;
+				background:#fed136;
+				opacity:0.9;
+				font-family:"my-font" !important;
+				content:"\e906";
+			}
+			.min img{
+				display:block;
+				width:100%;
+				height:270px;
+			}
+			.min  h3{
+				margin-top:20px;
+				font-size:16px;
+				line-height:28px;
+				color:#333;
+				font-weight:600;
+				text-align:center;
+			}
+			#photo-content .min p{
+				margin-bottom:0;
+				line-height:20px ;
+			}
+			#about-content{
+				width:100%;
+				background-color:#fff;
+				padding-top:127px;
+			}
+			#about-content dl{
+				width:1140px;
+				margin:0 auto;
+			}
+			#about-content dl dt{
+				text-align:center;
+			}
+			#about-content dl dt h2{
+				font-size:22px;
+				line-height:60px;
+				font-weight:600;
+			}
+			#about-content dl dt p{
+				font-size:15px;
+				line-height:30px;
+				font-family:cursive;
+				color:#777;
+				text-align:center;
+				margin-bottom:55px;
+			}
+			#about-content dl dd{
+				width:100%;
+				position:relative;
+				box-sizing:border-box;
+				margin-bottom:130px;
+				text-align:center;
+			}
+		
+			#about-content .dd-text h2{
+				font-size:15px;
+				line-height:28px;
+			}
+			
+			#about-content  .img-content{
+				text-align:center;
+				position:absolute;
+				left:50%;
+				margin-left:-75px;
+			}
+			#about-content  .img-content:after{
+				content:"";
+				display:block;
+				width:2px;
+				height:100%;
+				background-color:#f1f1f1;
+				position:absolute;
+				top:100%;
+				left:50%;
+				margin-left:-1px;
+			}
+			#about-content  .img-content img{
+				border:5px solid #f1f1f1;
+				width:150px;
+				height:150px;
+				border-radius:50%;
+			}
+			#about-content .text-main >div{
+				width:40%;
+				height:154px;
+			}
+			#about-content .text-main .left-div{
+				float:left;
+				text-align:right;
+			}
+			#about-content .text-main .right-div{
+				float:right;
+				text-align:left;
+			}
+			#about-content .text-main >div h2{
+				font-size:16px;
+				line-height:30px;
+			}
+			#about-content .text-main >div p{
+				font-size:14px;
+				line-height: 20px;
+				color:#777;
+			}
+			#about-content dd .end-img{
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				background:#fed136;	
+				text-align:center;
+				display:inline-block;
+				border:5px solid #f1f1f1;
+			}
+			#about-content dd .end-img >div{
+				padding-top:40px;
+				font-size:14px;
+				color:#fff;
+				line-height:20px;
+			}
+			#our-content{
+				width:100%;
+				background-color:#f7f7f7;
+				padding: 130px 0px;
+				
+			}
+			#our-content dl{
+				width:1140px;
+				margin:0 auto;
+				text-align:center;		
+			}
+			#our-content dl dt h2{
+				font-size:22px;
+				line-height:60px;
+				font-weight:600;
+			}
+			#our-content dl dt p{
+				font-size:15px;
+				line-height:30px;
+				font-family:cursive;
+				color:#777;
+				text-align:center;
+			}
+			#our-content dl dd{
+				width:33.33%;
+				margin-top:60px;
+				text-align:center;
+				font-size:0;
+				padding-bottom:45px;
+				float:left;
+			}
+			#our-content dl dd img{
+				border-radius:50%;
+				border:10px solid #fff;
+				margin-bottom:10px;
+			}
+			#our-content dl dd h3{
+				font-size:16px;
+				line-height:30px;
+				font-weight:600;
+			}
+			#our-content dl dd p{
+				font-size:12px;
+				line-height:20px;
+				color:#777;
+			}
+			#our-content dl dd a{
+				display:inline-block;
+				margin-top:10px;
+				width:40px;
+				height:40px;
+				border-radius:50%;
+				background:#000;
+				margin-right:10px;
+				
+			}
+			#our-content dl dd a:hover{
+				background:#fed136;
+			}
+			.font-f, .font-in,.font-twiter{
+				font-family:"my-font" !important;
+				font-size:20px;
+				line-height:40px;
+				color:#fff;
+			}
+			#our-content .our-end{
+				width:50%;
+				margin: 0 auto;
+				font-size:15px;
+				line-height:28px;
+				color:#777;
+				text-align:center;
+			}
+			#logo-bar{
+				width:100%;
+				height:155px;
+				background-color:#fff;
+			}
+			#logo-bar a{
+				float:left;
+				text-align:center;
+				display:block;
+				width:25%;
+				height:100%;
+			}
+			#logo-bar a:before{
+				display:inline-block;
+			    content:"";
+			    width:0;
+			    height:100%;
+			    vertical-align:middle;		
+			}
+			#logo-bar a img{
+				vertical-align:middle;
+			}
+			#map-content{
+				width:100%;
+				height:770px;
+				background:url(img/map-image.png) center center black;
+				display:table;
+				background-size:cover;
+				
+			}
+			#map-content .map-vercial{
+				display:table-cell;
+				vertical-align:middle;
+			}
+			#map-content .map-top h2{
+				font-size:22px;
+				line-height:60px;
+				font-weight:600;
+				color:#fff;
+				text-align:center;
+			}
+			#map-content .map-top p{
+				font-size:18px;
+				line-height:30px;
+				font-family:cursive;
+				color:#777;
+				text-align:center;
+				font-weight:400;
+			}
+			#map-content .map-center form{
+				width:1140px;
+				margin:0 auto;
+				margin-top:70px;
+			}
+			#map-content .map-center .form-left{
+				float:left;
+			}
+			#map-content .map-center .form-left input[type="text"]{
+				width:513px;
+				height:20px;
+				padding:20px 0 20px 20px;
+				border-radius:10px;
+				background:#fff;
+				border:none;
+				margin-bottom:25px;
+			}
+			#map-content .map-center .form-right{
+				float:right;
+				
+			}
+			#map-content .map-center .form-right textarea{
+				width:535px;
+				border-radius:10px;
+				resize:none;
+				height:205px;
+				padding-top:20px;
+				padding-left:20px;
+			}
+			
+			#map-content .form-bottom button[type="submit"]{
+				width:229px;
+				height:71px;
+				padding:20px 40px;
+				background:#fed136;
+				border:none;
+				border-radius:5px;
+				cursor:pointer;
+				color:#fff;
+			}
+			#map-content .form-bottom button[type="submit"]:hover{
+				    background-color: #fec503;
+				    border-color: #f6bf01;
+			}
+			#map-content .form-bottom{
+				text-align:center;
+			}
+			#footer{
+				width:100%;
+				height:90px;
+				background:#fff;
+			}
+			#footer .left{
+				font-size:14px;
+				line-height:90px;
+				text-align:center;
+				font-weight:600;
+				width:40%;
+				float:left;
+				height:100%;
+				
+			}
+			#footer .right{
+				width:40%;
+				float:left;
+				height:100%;
+			
+				font-size:14px;
+				line-height:90px;
+				text-align:center;
+				color:#fed136;
+			}
+			#footer .center{
+				width:20%;
+				float:left;
+				height:100%;
+			
+				font-size:0;
+				text-align:center;
+			}
+	       #footer .center >div{
+	       		height:100%;
+	       		margin-left:-25px;
+	       }
+			#footer .center>div:before{
+				content:"";
+				width:0;
+				height:100%;
+				display:inline-block;
+				vertical-align:middle;
+			}
+			#footer .center a{
+				width:100px;
+				display:inline-block;
+				background-color: #222;
+				margin-left:25px;
+				height: 40px;
+				width: 40px;
+				border-radius: 100%;
+				font-size: 20px;
+				vertical-align:middle;
+			}
+			#footer .center a:hover{
+				background:#fed136;
+			}
+			#ser-heade .font-E-Commerce,#ser-heade .font-Design,#ser-heade .font-Web{
+				font-family:"my-font" !important;
+				font-size:50px;
+				line-height:100px;
+				text-align:center;
+				color:#fff;		
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="layout ct clearfix">
+				<a href="#" class="logo">
+					<img src="" alt="">
+				</a>
+				<ul class="nav clearfix">
+					<li><a href="">service</a></li>
+					<li><a href="">portolio</a></li>
+					<li><a href="">about</a></li>
+					<li><a href="">team</a></li>
+					<li><a href="">contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="welcome">
+			
+		</div>
+		<div id="service">
+			<div class="layout">
+				<h1>service</h1>
+				<p>dddddd ddddd</p>
+				<ul class="features clearfix">
+					<li>
+						<i class="fa fa-cart"></i>
+						<h3>E-Commerer</h3>
+						<p>ddddddd</p>
+					</li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		
+		<style>
+			.event{
+				width: 500px;
+				margin-top: 100px;
+			}
+			.event .avatar img{
+				width: 100px;
+				height: 100px;
+				border: 4px solid #ccc;
+				border-radius: 50px;
+			}
+
+			.event.left{
+				position: absolute;
+				left: 0;
+				text-align: right;
+			}
+			.event.left .avatar{
+				float: right;
+			}
+			.event.left .event-desp{
+				margin-right: 120px;
+			}
+
+			.event.right{
+				position: absolute;
+				right: 0;
+				text-align: left;
+			}
+			.event.left .avatar{
+				float: left;
+			}
+			.event.right .event-desp{
+				margin-left: 120px;
+			}
+
+			.border{
+				position: relative;
+				
+				height: 100px;
+				border-left: 4px solid #ccc;
+			}
+
+
+		</style>
+
+
+		<div id="time-line">
+			<div class="event left">
+				<div class="avatar">
+					<img src="" alt="">
+				</div>
+				<div class="event-desp">
+					<h3 >2008</h3>
+					<h3>ddd</h3>
+					<p>dddffffff</p>
+				</div>
+			</div>
+			<div class="border"></div>
+			<div class="event right"></div>
+			<div class="border"></div>
+			<div class="event left"></div>
+			<div class="border"></div>
+			<div class="event right"></div>
+		</div>
+
+
+
+
+
+
+
+		<div id="header">
+			<div class="layout">
+				<ul class="header-content clearfix">
+					<li class="nav-start">
+						<a href="#">Start Bootstrap</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+					<li>
+						<a href="#">Team</a>
+					</li>
+					<li>
+						<a href="#">ABOUT</a>
+					</li>
+					<li>
+						<a href="#">Portfolio</a>
+					</li>
+					<li>
+						<a href="#">Services</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="header-we">
+			<div class="layout header-we-content">
+				<h1>Welcome To Our Studio!</h1>
+				<p>IT'S NICE TO MEET YOU</p>
+			    <a href="#">Tell Me More</a>
+			</div>
+		</div>
+		<div id="ser-heade">
+			<h2>SERVICES</h2>
+			<p>Lorem ipsum dolor sit amet consectetur.</p>
+			<ul class="ser-content clearfix">
+				<li>
+					<div class="font-E-Commerce">&#xe902</div>	
+					<p>E-Commerce</p>
+					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</h3>
+				</li>
+				<li>
+					<div class="font-Design">&#xe900</div>	
+					<p>Responsive Design</p>
+					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</h3>
+				</li>
+				<li>
+					<div class="font-Web">&#xe904</div>	
+					<p>Web Security</p>
+					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</h3>
+				</li>
+			</ul>
+		</div>
+		<div id="photo-content">
+			<h2>PORTFOLIO</h2>
+			<p>Lorem ipsum dolor sit amet consectetur.</p>
+			<ul class="ex-photo clearfix">
+				<li>
+					<div>
+						<div class="min">
+							<a href="#">
+							   <img src="img/roundicons1.png"/>
+							</a>
+							<h3>Round Icons</h3>
+							<p>Graphic Design</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div class="min">
+							<a href="#">
+							   <img src="img/startup-framework2.png"/>
+							</a>
+							<h3>Startup Framework</h3>
+							<p>Website Design</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div class="min">
+							<a href="#">
+							   <img src="img/treehouse3.png"/>
+							</a>
+							<h3>Treehouse</h3>
+							<p>Website Design</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div class="min">
+							<a href="#">
+							   <img src="img/golden4.png"/>
+							</a>
+							<h3>Golden</h3>
+							<p>Website Design</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div class="min">
+							<a href="#">
+							   <img src="img/escape5.png"/>
+							</a>
+							<h3>Escape</h3>
+							<p>Website Design</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div class="min">
+							<a href="#">
+							   <img src="img/dreams6.png"/>
+							</a>
+							<h3>Dreams</h3>
+							<p>Website Design</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="about-content">
+			<dl>
+				<dt>
+					<h2>About</h2>
+					<p>Lorem ipsum dolor sit amet consectetur.</p>
+				</dt>
+				<dd class="clearfix">
+					<div class="img-content">
+						<img src="img/1.jpg"/>
+					</div>
+					<div class="text-main left clearfix">
+						<div class="left-div">
+						    <h2>2009-2011</h2>
+						    <h2>Our Humble Beginnings</h2>
+						    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+						</div>
+					</div>
+				</dd>
+				<dd class="clearfix">
+					<div class="img-content">
+						<img src="img/2.jpg"/>
+					</div>
+					<div class="text-main left clearfix">
+						<div class="right-div">
+						    <h2>2009-2011</h2>
+						    <h2>Our Humble Beginnings</h2>
+						    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+						</div>
+					</div>
+				</dd>
+				<dd class="clearfix">
+					<div class="img-content">
+						<img src="img/3.jpg"/>
+					</div>
+					<div class="text-main left clearfix">
+						<div class="left-div">
+						    <h2>2009-2011</h2>
+						    <h2>Our Humble Beginnings</h2>
+						    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+						</div>
+					</div>
+				</dd>
+				<dd class="clearfix">
+					<div class="img-content">
+						<img src="img/4.jpg"/>
+					</div>
+					<div class="text-main left clearfix">
+						<div class="right-div">
+						    <h2>2009-2011</h2>
+						    <h2>Our Humble Beginnings</h2>
+						    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+						</div>
+					</div>
+				</dd>
+				<dd>
+					<div class="end-img">
+					    <div>
+						   <div>BE PART </div>
+						   <div>OF OUR </div>
+						   <div>STORY!</div>
+						</div>
+					</div>
+				</dd>
+			</dl>
+		</div>
+		<div id="our-content">
+			<dl class="clearfix">
+				<dt>
+					<h2>OUR AMAZING TEAM</h2>
+					<p>Lorem ipsum dolor sit amet consectetur.</p>
+				</dt>
+				<dd>
+					<img src="img/kay.jpg" alt="kay" />
+					<h3>Kay Garland</h3>
+					<p>Lead Designer</p>
+					<a href="#" class="font-twiter">&#xe905</a>
+					<a href="#" class="font-f">&#xe901</a>
+					<a href="#" class="font-in">&#xe903</a>
+				</dd>
+				<dd>
+					<img src="img/2-2.jpg" alt="kay" />
+					<h3>Kay Garland</h3>
+					<p>Lead Designer</p>
+					<a href="#" class="font-twiter">&#xe905</a>
+					<a href="#" class="font-f">&#xe901</a>
+					<a href="#" class="font-in">&#xe903</a>
+				</dd>
+				<dd>
+					<img src="img/3-3.jpg" alt="kay" />
+					<h3>Kay Garland</h3>
+					<p>Lead Designer</p>
+					<a href="#" class="font-twiter">&#xe905</a>
+					<a href="#" class="font-f">&#xe901</a>
+					<a href="#" class="font-in">&#xe903</a>
+				</dd>
+			</dl>
+			<div class="our-end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</div>		
+		</div>
+		<div id="logo-bar" class="clearfix">
+			<a href="#">
+			   
+				<img src="img/envato.jpg"/>
+			</a>
+			<a href="#">
+			   
+				<img src="img/2-2-2.jpg"/>
+			</a>
+			<a href="#">
+			   
+				<img src="img/3-3-3.jpg"/>
+			</a>
+			<a href="#">	   
+				<img src="img/4-4-4.jpg"/>
+			</a>
+		</div>
+		<div id="map-content">
+			<div class="map-vercial">
+				<div class="map-center">
+					<div class="map-top">
+						<h2>CONTACT US</h2>
+						<p>Lorem ipsum dolor sit amet consectetur.</p>
+					</div>
+					<form action="" method="post" name="form-map">
+						<div class="form-top clearfix">
+							<div class="form-left">
+								<div class="your-name">
+									<input type="text" id="" value="" name="name" placeholder="Your name *"/>		
+								</div>
+								<div class="your-Email">
+									<input type="text" id="" value="" name="name" placeholder="Your Email *"/>		
+								</div>
+								<div class="your-phone">
+									<input type="text" id="" value="" name="name" placeholder="Your phone *"/>		
+								</div>
+							</div>
+							<div class="form-right">
+								<textarea name="" rows="" cols="" placeholder="Your Message"></textarea>
+							</div>
+						</div>
+						<div class="form-bottom">
+							<button type="submit" class="">Send Message</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="left clearfix">Copyright 漏 Your Website 2014</div>
+			<div class="center">
+				<div>
+				   <a href="#" class="font-twiter">&#xe905</a>
+				   <a href="#" class="font-f">&#xe901</a>
+				   <a href="#" class="font-in">&#xe903</a>
+				 </div>
+			</div>
+			<div class="right">Privacy Policy  Terms of Use</div>
+		</div>
+	</body>
+</html>
