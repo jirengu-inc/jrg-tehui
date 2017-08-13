@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<style>
+	.sco{
+		height:220px;
+		line-height:100px;
+		overflow: auto;
+	}
+	.color{
+		width:400px;
+		height:200px;
+		border:1px solid;
+	}
+	input{
+		border:1px solid black;
+	}
+</style>
+<body>
+	当点击$btn 时，让 $btn 的背景色变为红色再变为蓝色
+    <button class="btn">点击</button>
+	<hr>
+	当窗口滚动时，获取垂直滚动距离
+	<div class="sco">
+		<p>内容内容内容内容内容内容内容内容
+		内容内容内容
+<p class = 'a'>垂直滚动距离:</p></p>	
+	</div>
+	<hr>
+	当鼠标放置到$div 上，把$div 背景色改为红色，移出鼠标背景色变为白色
+<div class="color"></div>
+<hr>
+当鼠标激活 input 输入框时让输入框边框变为蓝色，当输入框内容改变时把输入框里的文字小写变为大写，当输入框失去焦点时去掉边框蓝色，控制台展示输入框里的文字
+<input type="text">
+<hr>
+当选择 select 后，获取用户选择的内容
+<select>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+</select>
+<p class = 'ct'>用户选择的内容:</p>
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+<script>
+	var $btn = $('.btn');
+	$btn.on('click',function(){
+		$btn.css({'background-color':'red'})
+		setTimeout(function(){
+			$btn.css({'background':'blue'})
+		},1000)
+	})	
+
+	$('.sco').on('scroll',function(){
+		$('.a').text('垂直滚动距离:' + $('.sco').scrollTop() + 'px');
+	})
+	$('.color').on('mouseenter',function(){
+		$('.color').css({'background-color':'red'})
+	})
+	$('.color').on('mouseleave',function(){
+		$('.color').css({'background-color':'blue'})
+	})
+	$('input').on('focus',function(){
+		$('input').css({'border':'1px solid blue'})
+	})
+	$('input').on('blur',function(){
+		$('input').css({'border':'1px solid black'})
+	})
+	$('input').on('keyup',function(){
+		$('input').val($('input').val().toLocaleUpperCase());
+		console.log($('input').val());
+	})
+	$('select').on('change',function(){
+		$('.ct').text('用户选择的内容:' + $(this).val())
+		
+	})
+
+</script>
+</html>

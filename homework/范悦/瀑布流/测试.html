@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>new轮播</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<style>
+
+</style>
+<body>
+
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+<script>
+	String.prototype.getMostOften=function(){
+		var str = this,
+			obj = {},//创建一个存放出现频率的空对象
+			max = 0;//初始化一个频率最高为0
+
+		for(var i=0;i<str.length;i++){
+			if(str[i] in obj){//如果str[i]是obj的属性的话就加1
+				obj[str[i]]+=1;
+			}else{
+				obj[str[i]]=1;//没有这个属性的话就创建一个这个属性赋值为1
+			}
+		}
+		console.log(obj)
+		for(key in obj){//遍历obj，逐个比较选出最大的那个频率
+			if(obj[key]>max){
+				max = obj[key];
+				word = key;	//将最大的频率的key赋值给一个变量			
+			}
+		}
+		return (word + ',' + '因为' + word + '出现了' + max + '次')
+	}
+	var str = 'ahbbccdeddddfg';
+	var ch = str.getMostOften();
+	console.log(ch); //d , 因为d 出现了5次
+	
+
+	function a(){
+
+	}
+	var b = new a;
+
+	b instanceof a;//会返回true，因为b是由a所构造的一个对象，也就是b是a的一个实例。
+
+	function todo(obj1,Func){
+		var a = obj1.__proto__,
+			b = Func.prototype;
+		do{
+			if(a = b){
+				return true
+			}
+			if(!a){
+				return false
+			}
+
+		}while(a = a.__proto__)
+			
+		//return false		
+	}
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				background: url(img/css_sprites.png);
+				width: 30px;
+				height: 30px;
+				display: inline-block;
+				cursor:pointer;
+			}			
+			i {
+				width: 60px;
+				height: 30px;
+				display: inline-block;
+				vertical-align: top;
+				font-size: 20px;
+			}
+			.go{
+				background-position:-0 -60px;
+			}
+			.stop{
+				background-position:-0 -120px;
+			}
+			.go:hover{
+				background-position:-0 -90px;
+			}
+			.start:hover{
+				background-position:-0 -30px;;
+			}
+			.stop:hover{
+				background-position:-0 -150px;;;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="go"></div><!--
+		--><i>前进</i>
+		<div class="start"></div><!--
+		--><i>开始</i>
+		<div class="stop"></div><!--
+		--><i>停止</i>
+	</body>
+
+</html>

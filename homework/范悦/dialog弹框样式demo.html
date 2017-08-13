@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>dialog弹框样式测试</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<style>
+	.dialog{
+		width:350px;
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		border:1px solid #ccc;
+	}
+	.dialog-box .dialog-header{
+		padding:10px 20px;
+		background:#666;
+		color:white;
+	}
+	.dialog-box .dialog-header h3{
+		font-size:15px;
+		margin:0;
+	}
+	.dialog-box .dialog-header span{
+		position:absolute;
+		top:8px;
+		right:5px;
+		font-family:fantasy;
+		cursor:pointer;
+	}
+	.dialog-box .dialog-content{
+		margin:10px;
+	}
+	.dialog-box .dialog-footer{
+		margin:10px;
+		text-align:center;
+	}
+	a.btn{
+		padding:5px 6px;
+		background:red;
+		color:white;
+		text-decoration:none;
+	}
+
+</style>
+<body>
+    <div class="dialog">
+    	<div class="dialog-box">
+    		<div class="dialog-header">
+    			
+    			
+    		</div>
+    		<div class="dialog-content">
+    			
+    		</div>
+    		<div class="dialog-footer">
+    			<a href="#" class="btn btn-close">取消</a>
+    			<a href="#" class="btn btn-confirm">确定</a>
+    		</div>
+    	</div>
+    	
+    </div>
+
+
+
+
+    		<!--<div class="dialog" style="display:">
+			<div class="dialog-box">
+			<div class="dialog-header">
+			<h3></h3>
+			<span class="btn-close">x</span>
+			</div>
+			<div class="dialog-content">
+			</div>
+			<div class="dialog-footer">
+			<a href="#" class="btn btn-close">取消</a>
+			<a href="#" class="btn btn-confirm">确定</a>
+			</div>
+			</div>
+			</div>-->
+</body>
+</html>

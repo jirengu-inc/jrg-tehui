@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+    
+<body>
+
+    
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+
+<script>
+//构造函数模式
+    // function gouzao(name){
+    //     this.name = name;
+
+    // }
+    // gouzao.prototype={
+    //     init:function(){
+    //         console.log(this.name)
+    //     }
+    // }
+
+
+    // var a = new gouzao('fanyue')
+
+
+
+//混合模式
+    // function gouzao(name){
+    //     this.name = name;
+
+    // }
+    // gouzao.prototype={
+    //     init:function(){
+    //         console.log(this.name)
+    //     }
+    // }
+
+    // function hunhe(name,age){
+    //     gouzao.call(this,name);
+    //     this.age=age;
+    // }
+
+    // hunhe.prototype=create(gouzao.prototype);
+    // function create(objPro){
+    //     function F(){};
+    //     F.prototype = objPro;
+    //     return new F();
+    // }
+
+    // hunhe.prototype.say=function(){
+    //     console.log(this.age)
+    // }
+
+    // var a = new hunhe('fanyue',20)
+
+
+//模块模式
+    // var Moudle=(function(){
+    //    var name = 'fanyue';
+
+    //    function sayname(){
+    //         console.log(name);
+    //    }
+    //         function chan(neww){
+    //             console.log(neww)
+    //         }
+    //         return {
+    //             sayname:sayname,
+    //             chang:chan
+    //         }
+    // })()
+
+//工厂模式
+
+    // function gongchang(type){
+    //     var person={
+    //         name:type
+    //     }
+    //     person.sayName=function(){
+    //         console.log('fanyue')
+    //     }
+    //     person.sayAge=function(){
+    //         console.log('20')
+    //     }
+    //     if(type=='name'){
+    //         return person.sayName
+    //     }else if(type=='age'){
+    //         return person.sayAge
+    //     }
+        
+    // }
+    // var p1 = gongchang('age')//20
+    // var p2 = gongchang('name')//fanyue
+
+
+//单例模式
+
+// var danli =(function(){
+//     var instance;
+//     function init(){
+//         function setName(nnn){
+//             name = nnn
+//         }
+//         function getName(){
+//             console.log(name)
+//         }
+
+//         return {
+//             get:getName,
+//             set:setName
+//         };
+//     }
+//     return {
+//         getInstance:function(){
+//             if(!instance){
+//                 instance = init();
+//             }
+//             return instance;
+//         }
+//     }
+// })()
+
+// var p1 = danli.getInstance();
+// var p2 = danli.getInstance();
+// p1.set('fanyue')
+// p1.get()
+// p1===p2
+
+
+    
+
+
+
+//发布订阅模式
+//
+
+// var Eventcenter=(function(){
+
+//     var events = {};//先初始化一个事件管理仓库
+
+//     function on(evt,fn){
+//         events[evt]=events[evt]||[];//判断事件有没有一样的
+//         events[evt].push(fn);//将对应事件的函数放进去
+//     }
+
+//     function fire(evt){
+//         if(!events[evt]){  //检查事件存不存在，不存在直接跳出不执行任何操作
+//             return
+//         }
+
+//         for(var i =0;i<events[evt].length;i++){ //遍历这个事件里的所有方法然后执行
+//             events[evt][i]();
+//         }
+//     }
+//     return{
+//         on:on,
+//         fire:fire
+//     }
+// })()
+
+
+
+// Eventcenter.on('one',function(){
+//     console.log(1)
+// })
+// Eventcenter.on('two',function(){
+//     console.log(21)
+// })
+// Eventcenter.fire('two')//21
+// Eventcenter.fire('one')//1
+
+
+
+
+
+var EventManager=(function(){
+
+    var events = {};//先初始化一个事件管理仓库
+
+    function on(evt,fn){
+        events[evt]=events[evt]||[];//判断事件有没有一样的
+        events[evt].push(fn);//将对应事件的函数放进去
+    }
+
+    function fire(evt,data){
+        if(!events[evt]){  //检查事件存不存在，不存在直接跳出不执行任何操作
+            return
+        }
+
+        for(var i =0;i<events[evt].length;i++){ //遍历这个事件里的所有方法然后执行
+            events[evt][i](data);
+        }
+    }
+    function off(evt){
+        if(!events[evt]){
+            return
+        }else{
+            events[evt] = [];
+        }
+        
+    }
+    return{
+        on:on,
+        fire:fire,
+        off:off
+    }
+})()
+
+EventManager.on('text:change', function(val){
+    console.log('text:change...  now val is ' + val);  
+});
+EventManager.fire('text:change', '饥人');//text:change...  now val is 饥人
+EventManager.off('text:change');
+EventManager.fire('text:change', '饥人');//undefined
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			li{	
+				width:200px;
+				margin-bottom:50px;
+			}
+			.img-preview{
+				width:300px;
+				height:300px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul class="ct">
+			<li data-img="img/1.png">鼠标放置查看图片1</li>
+			<li data-img="img/2.png">鼠标放置查看图片2</li>
+			<li data-img="img/3.png">鼠标放置查看图片3</li>
+		</ul>
+		<div class="img-preview"></div>
+		<script>
+			var oct=document.querySelector(".ct");
+			var odiv=document.querySelector(".img-preview");
+			oct.onmouseover=function(e){
+				var name=e.target.getAttribute("data-img");
+				e.stopPropagation();
+				if(e.target.className===""&&name!=null){
+					odiv.style.background='url('+name+') no-repeat 0 0';
+					odiv.style.backgroundSize="cover";
+				}	
+			}
+		</script>
+	</body>
+
+</html>

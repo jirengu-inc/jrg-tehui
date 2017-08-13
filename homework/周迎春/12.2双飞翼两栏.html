@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>第12节</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	html,body{
+		padding: 0;
+		margin: 0;
+	}
+	#ahead,#footer{
+		height: 30px;
+		background-color: #ccc;
+	}
+	
+	#container:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	
+	#container .warp{
+		float: left;
+
+	}
+	.main{
+		height: 100px;
+		margin-right:200px;
+		background-color: green;	
+	}
+	#container .bside{
+		float: left;
+		margin-left:-200px;
+		width: 200px;
+		height: 100px;
+		background-color: yellow;
+	}
+
+</style>
+</head>
+<body>
+
+	<div id="ahead">头部</div>
+	<div id="container">
+		<div class="warp">
+	    	<div class="main">圣杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布圣杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布圣杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布局杯布</div>
+	    </div>
+	    <div class="bside">右侧边栏</div>
+	</div>
+	<div id="footer">底部</div>
+
+</body>
+</html>

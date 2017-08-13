@@ -1,0 +1,170 @@
+body,html,ul,li,p,h1,h2,h3,h4{
+	margin: 0;
+	padding:0;
+}
+body{
+	font:14px/1.5 '微软雅黑';
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+li{
+	list-style: none;
+}
+.layout{
+    width: 1000px;
+    margin: 0 auto;
+}
+/* 导航 */
+#nav{
+	border: 1px solid #ccc;
+	height: 50px;
+	
+	
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+#nav .logo{
+	line-height: 50px;
+	font-size: 30px;
+    float: left;
+}
+#nav .layout>ul{
+	line-height: 50px;
+	
+	margin-left: 30px;
+}
+#nav .layout > ul > li{
+	position: relative;
+    padding-left: 20px;
+	float: left;
+}
+#nav a:hover{
+	color: #333
+}
+#nav .child{
+	position: absolute;
+	top: 50px;
+	left: 2px;
+	width: 64px;
+    border: 1px solid #ccc;
+    display: none;
+}
+#nav .child li{
+	background-color: #fff;
+	text-align: center;
+	line-height: normal;
+	padding: 10px;
+}
+#nav .line{
+	border-bottom: 1px dashed #ccc;
+}
+#nav .child li:hover{
+	background-color: #eaeaea;
+}
+#nav .more:hover .child{
+	display: block;
+}
+/* 我的简介 */
+#brief{
+	background-color: #b84d45;
+	padding: 30px 0;
+	color: #fff;
+}
+/* 我的作品 */
+#works{
+	margin-bottom: 30px;
+}
+#works .list{
+	margin-top: 40px;
+	padding: 10px;
+	background-color: #eaeaea;
+}
+
+#works .list li{
+	margin-left: 10px;
+	float: left;
+}
+#works .page{
+	color: #b84d45;
+}
+#works .other{
+	color: #666;
+}
+#works .list:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+#works .project{
+	margin-left: -50px;
+}
+#works .project li{
+	float: left;
+	margin-left: 48px;
+	margin-top: 20px;
+	border: 1px solid #ccc;
+
+
+}
+#works .project:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#works .project img{
+	width: 300px;
+	height: 200px;
+}
+#works .project h2,#works .project p{
+	margin:10px;
+}
+#works .btn{
+	display: inline-block;
+	width: 46px;
+	height: 34px;
+	border: 1px solid #ccc;
+	color: #666;
+	text-align: center;
+	line-height: 34px;
+	 border-radius:5px;
+	 margin-left: 126px;
+	 margin-bottom: 10px;
+}
+/* 下载 */
+#download{
+	background-color: #b84d45;
+	text-align: center;
+	padding: 20px 0;
+	color: #fff;
+}
+#download p{
+	margin: 10px 0;
+}
+#download .btn{
+	display: inline-block;
+	width: 46px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	color: #fff;
+}
+/* 尾部*/
+#footer{
+	padding: 20px;
+	text-align: center;
+}
+#footer hr{
+	width: 1000px;
+	opacity: 0.3;
+}
+#footer p{
+	margin: 10px 0;
+}

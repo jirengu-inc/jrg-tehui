@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Examples</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="" rel="stylesheet">
+		<style>
+			ul,li {
+				padding:0px;
+				margin:0px;
+			}
+			a{
+				color:#000;
+				font-size:12px;
+				text-decoration:none;
+			}
+			li{
+				list-style:none;
+			}
+			.cen{
+				text-align:center;
+			}
+			.ct{
+				width:736px;
+				margin:auto;
+			}
+			.ct-cld{
+				margin-left:-20px;
+				margin-bottom:-10px;
+				position:relative;
+				left:10px;
+				position:relative;
+			}
+			.ct-cld:after{
+				clear:both;
+				content:'';
+				display:block;
+			}
+			.ct-cld li{
+				float:left;
+				width:230px;
+				height:190px;
+				border:1px solid #ccc;
+				margin:0px 10px 20px 10px;
+			}
+			.tex,.cny{
+				font-size:13px;
+				margin-left:15px;
+			}
+			.cny{
+				color:red;
+			}
+			.cover{
+				width:230px;
+				height:190px;
+				position:absolute;
+				background-color:#ccc;
+				opacity:0.5;
+				display:none;
+			}
+			.cov-cld{
+				text-align:center;
+				margin-top:80px;
+			}
+			.cov-cld a{
+				border:1px solid red;
+				padding:10px;
+				background-color:#fff;
+			}
+			.active{
+				background-color:#ccc;
+			}
+			.active a{
+				color:red;
+				opacity:none;
+			}
+			.covershow .cover{
+				display:block;
+			}
+			.ct-cld.panel{
+				display:block;
+			}
+			.boss{
+				margin-bottom:50px;
+			}
+			h1{
+				color:#666;
+			}
+			.ct a{
+				padding:15px 20px;
+				color:#666;
+				background-color:#fff;
+				border:1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="ct">
+			<h1>珠宝首饰</h1>
+			<ul class="ct-cld">
+				<li>
+					<div class="cover">
+						<div class="cov-cld"><a href="">立即抢购</a></div>
+					</div>
+					<div class="cen">
+						<img src="http://img10.360buyimg.com/N3/jfs/t1360/330/897475737/123557/23624706/55b05e25N13d4ec5e.jpg" alt="">
+					</div>
+					
+					<div class="tex">藏美千足金和田玉金镶玉路路通吊坠</div>
+					<div class="cny">￥1699.00</div>
+				</li>
+				<li>
+					<div class="cover">
+						<div class="cov-cld"><a href="">立即抢购</a></div>
+					</div>
+					<div class="cen">
+						<img src="http://img10.360buyimg.com/N3/jfs/t1360/330/897475737/123557/23624706/55b05e25N13d4ec5e.jpg" alt="">
+					</div>
+					<div class="tex">藏美千足金和田玉金镶玉路路通吊坠</div>
+					<div class="cny">￥1699.00</div>
+				</li>
+				<li>
+					<div class="cover">
+						<div class="cov-cld"><a href="">立即抢购</a></div>
+					</div>
+					<div class="cen">
+						<img src="http://img10.360buyimg.com/N3/jfs/t1360/330/897475737/123557/23624706/55b05e25N13d4ec5e.jpg" alt="">
+					</div>
+					<div class="tex">藏美千足金和田玉金镶玉路路通吊坠</div>
+					<div class="cny">￥1699.00</div>
+				</li>
+				<li>
+					<div class="cover">
+						<div class="cov-cld"><a href="">立即抢购</a></div>
+					</div>
+					<div class="cen">
+						<img src="http://img10.360buyimg.com/N3/jfs/t1360/330/897475737/123557/23624706/55b05e25N13d4ec5e.jpg" alt="">
+					</div>
+					<div class="tex">藏美千足金和田玉金镶玉路路通吊坠</div>
+					<div class="cny">￥1699.00</div>
+				</li>
+				<li>
+					<div class="cover">
+						<div class="cov-cld"><a href="">立即抢购</a></div>
+					</div>
+					<div class="cen">
+						<img src="http://img10.360buyimg.com/N3/jfs/t1360/330/897475737/123557/23624706/55b05e25N13d4ec5e.jpg" alt="">
+					</div>
+					<div class="tex">藏美千足金和田玉金镶玉路路通吊坠</div>
+					<div class="cny">￥1699.00</div>
+				</li>
+				<li>
+					<div class="cover">
+						<div class="cov-cld"><a href="">立即抢购</a></div>
+					</div>
+					<div class="cen">
+						<img src="http://img10.360buyimg.com/N3/jfs/t1360/330/897475737/123557/23624706/55b05e25N13d4ec5e.jpg" alt="">
+					</div>
+					<div class="tex">藏美千足金和田玉金镶玉路路通吊坠</div>
+					<div class="cny">￥1699.00</div>
+				</li>
+			</ul>
+			<a href="#" class="btn">添加</a>
+		</div>
+	</body>
+	<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+	<script>
+	var pro = [
+	{
+	img: 'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg',
+	name: '珂兰 黄金手 猴哥款',
+	price: '￥405.00'
+	},{
+	img: 'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg',
+	name: '珂兰 黄金转运珠 猴哥款',
+	price: '￥100.00'
+	},{
+	img: 'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg',
+	name: '珂兰 黄金手链 3D猴哥款',
+	price: '￥45.00'
+	}
+	];
+	function monkey(str){
+	var html = '';
+	html += '<li>';
+		html +=   '<div class="cover">'
+			html +=    '<div class="cov-cld"><a href="">立即抢购</a></div>'
+		html +=      '</div>'
+		html +=      '<div class="cen">'
+			html +=      '<img src="'+str[0].img+'">'
+		html +=    '</div>'
+		html += '<div class="tex">'+str[0].name+'</div>'
+		html += '<div class="cny">'+str[0].price+'</div>'
+	html += '</li>';
+	return html;
+	};
+	function monkey_2(str){
+	var html_2 = '';
+	html_2 += '<li>';
+		html_2 +=   '<div class="cover">'
+			html_2 +=    '<div class="cov-cld"><a href="">立即抢购</a></div>'
+		html_2 +=      '</div>'
+		html_2 +=      '<div class="cen">'
+			html_2 +=      '<img src="'+str[1].img+'">'
+		html_2 +=    '</div>'
+		html_2 += '<div class="tex">'+str[1].name+'</div>'
+		html_2 += '<div class="cny">'+str[1].price+'</div>'
+	html_2 += '</li>';
+	return html_2;
+	};
+	function monkey_3(str){
+	var html_3 = '';
+	html_3 += '<li>';
+		html_3 +=   '<div class="cover">'
+			html_3 +=    '<div class="cov-cld"><a href="">立即抢购</a></div>'
+		html_3 +=      '</div>'
+		html_3 +=      '<div class="cen">'
+			html_3 +=      '<img src="'+str[2].img+'">'
+		html_3 +=    '</div>'
+		html_3 += '<div class="tex">'+str[2].name+'</div>'
+		html_3 += '<div class="cny">'+str[2].price+'</div>'
+	html_3 += '</li>';
+	return html_3;
+	};
+	var a = monkey(pro),
+	b = monkey_2(pro),
+	c = monkey_3(pro);
+		$('.ct').on('click','.btn',function(){
+			$('.ct-cld').append(a).append(b).append(c)
+		});
+		$('.ct').on('mouseover','.ct-cld li',function(){
+		$(this).addClass('covershow');
+	})
+	$('.ct').on('mouseout','.ct-cld li',function(){
+		$(this).removeClass('covershow');
+		})
+	</script>
+</html>

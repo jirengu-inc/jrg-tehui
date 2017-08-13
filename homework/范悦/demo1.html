@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	.ct{
+		width:200px;
+		height:200px;
+		background-color:red;
+		position:relative;
+	}
+</style>
+</head>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+<body>
+	<button id = "btn">点我测试</button>
+    <button id="btn2">点我测试2</button>
+    <button id="btn3">点我测试3</button>
+    <div class="ct">测试内容</div>
+
+</body>
+<script>
+	var $jq = $('#btn');
+	var $jq2 = $('#btn2');
+	var $jq3 = $('#btn3');
+	var jq = $jq[0];
+	//var $jqq = $(jq);
+	$jq.on('click',function(){
+		$('.ct').finish()
+		$('.ct').animate({'left':'300px'},1000)
+		$('.ct').animate({'top':'300px'},1000)
+		$('.ct').animate({'left':'0px'},1000)
+		$('.ct').animate({'top':'0px'},1000)
+	});
+
+
+
+
+
+/*
+	$jq2.on('click',function(){
+		$('.ct').show();
+	});
+
+	$jq3.off('click',function(){
+		$jq.bind();
+	});
+
+	$('#btn').bind("click",function(){
+		//todo...
+		JQ扫描文档找出所有的$('#btn')元素，然后把事情绑定到每一个元素
+	});
+
+	$('#btn').on('click',function(){
+		$('#btn2').unbind();
+		//todo
+		JQ扫描文档找出所有的$('#btn2')元素，然后把事情取消绑定
+	});
+
+	$('#ct').delegate('a',"click",function(){
+		//todo...
+		JQ扫描文档查找$('ct'),并使用click时间和css选择器'a'作为参数绑定到ct上
+		只要有时间冒泡到了ct上，他就会查看事件是否为click事件和是不是'a'目标元素
+		发出来的，都为真就执行事件。
+	});
+
+	$('a').live('click',function(){
+		//todo...
+		Q扫描文档查找$('a'),并使用click时间和css选择器'a'作为参数
+		只要有事件冒泡到了document节点上，就会查看事件是否为click事件和是不是'a'目标元素
+		发出来的，都为真就执行事件。
+	});
+
+	//bind
+	$$('#btn').on('click',function(){
+		//todo..
+		on这个方法把bind和delegate统一了(live被废弃了)
+	});
+	//delegate
+	$$('#ct').on('click','a',function(){
+		//todo..
+	});
+	
+	$('#btn').on('click',function(){
+		$('#btn2').off();
+		代替了unbind
+	});
+*/
+</script>
+</html>

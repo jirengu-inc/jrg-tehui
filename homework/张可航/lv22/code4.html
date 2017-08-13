@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				box-sizing:border-box;
+			}
+			#tab-mod{
+				line-height:30px;
+				overflow:hidden;
+				margin:0 auto;
+				padding:0;
+				margin-right:-2px;
+			}
+			#tab-mod li{
+				list-style:none;
+				text-align:center;
+				cursor:pointer;
+				float:left;
+				width:33.33%;
+				margin-right:-1px;
+				border: 1px solid #ccc;
+			}
+			div{
+				margin-top:-1px;
+				height:180px;
+				border:1px solid #ccc;
+				display:none;
+				padding:40px;
+			}
+			.show{
+				display:block;
+			}
+			.backcolor{
+				background:#ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="tab-mod">
+			<li class="backcolor">tab1</li>
+			<li>tab2</li>
+			<li>tab3</li>
+		</ul>
+		<div class="show">第一个内容</div>
+		<div>第二个内容</div>
+		<div>第三个内容</div>
+		<script type="text/javascript">
+			var otab=document.getElementById("tab-mod");
+			var odiv=document.getElementsByTagName("div");
+			var oli=otab.getElementsByTagName("li");
+			otab.onclick=function(e){
+				e.stopPropagation();
+				for(var i=0;i<oli.length;i++){
+					oli[i].index=i;
+					oli[i].removeAttribute("class");
+					odiv[i].removeAttribute("class");
+				}
+				e.target.className="backcolor";
+				odiv[e.target.index].className="show";
+			}
+		</script>
+	</body>
+</html>

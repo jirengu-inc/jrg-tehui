@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <style>
+    ul,li{
+      list-style:none;
+      padding:0px;
+      margin:0px;
+    }
+    li{
+      float:left;
+      width:198px;
+      text-align:center;
+      border:1px solid #ccc;
+      height:30px;
+      line-height:30px;
+      border-top:none;
+      cursor: pointer;
+    }
+    li:after{
+      content:'';
+      display:block;
+      clear:both;
+    }
+    .ct{
+      width:600px;
+      height:250px;
+      border:1px solid #ccc;
+    }
+    .ct .tab .active{
+      background-color:#ccc;
+     
+    }
+    .con{
+      display:none;
+    }
+    .active{
+    	display:block;
+    }
+</style>
+<div class="ct">
+  <ul class="tab">
+    <li>tab1</li>
+    <li>tab2</li>
+    <li>tab3</li>
+  </ul>
+  <div class="con">内容1</div>
+  <div class="con">内容2</div>
+  <div class="con">内容3</div>
+</div>
+<div class="ct">
+  <ul class="tab">
+    <li>tab1</li>
+    <li>tab2</li>
+    <li>tab3</li>
+  </ul>
+  <div class="con">内容1</div>
+  <div class="con">内容2</div>
+  <div class="con">内容3</div>
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+<script>
+	 $('.ct li').on('click',function(){
+	 	var idx = $(this).index();
+	 	$(this).siblings().removeClass('active');
+	 	$(this).addClass('active')
+
+	 	$('.con').removeClass('active');
+	 	$('.con').eq(idx).addClass('active');
+	 });
+
+</script>
+</body>
+</html>

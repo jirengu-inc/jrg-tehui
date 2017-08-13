@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>全屏过渡色</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<style>
+	*{
+		padding:0;
+		margin:0;
+
+	}
+	html,body{
+		height:100%;
+		width:100%;
+	}
+	.guodu{
+
+		height:100%;
+		width:100%;
+		background: url(http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1208/24/c2/13179846_1345796441960.jpg)center center no-repeat;;
+		background-size:cover;
+	}
+	.guodu:before{
+		width:50%;
+		position: absolute;
+		top:0;
+		left:0;
+		bottom:0;
+		display: block;
+		content:'';
+		background: linear-gradient(to bottom right,rgba(23,56,78,0.5), rgba(89,123,99,0.5));
+	}
+	.guodu:after{
+		width:50%;
+		position: absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		display: block;
+		content:'';
+		background: radial-gradient(rgba(233,123,88,0.5), rgba(189,321,110,0.5));
+	}
+</style>
+<body>
+    <div class="guodu"></div>
+</body>
+</html>
