@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				min-width:1000px;
+			}
+			body,html{
+				width:100%;
+				height:100%;
+				margin:0;
+				padding:0;
+			}
+			.clearfix:after{
+				content:'';
+				display:block;
+				clear:both;
+			}
+			ul,li{
+				margin:0;
+				padding:0;
+				list-style:none;
+			}
+			#sidebar-top{
+				width:100%;
+				height:10%;
+				background-color:#333;
+				margin-bottom:2%;
+			}
+			#sidebar-top .side-content{
+				width:900px;
+				margin:0 auto;
+				height:100%;
+			}
+			#sidebar-top .side-left{
+				float:left;
+			}
+			img{
+				display:block;
+			}
+			#sidebar-top .side-right{
+				float:right;
+				height:100%;
+			}
+			#sidebar-top .side-right-list li{
+				font-size:17px;
+				color:white;
+				margin-right:20px;
+				display:table-cell;
+				padding-right:20px;
+				height:100%;
+				vertical-align: middle;
+			}
+			#content{
+				width:900px;
+				margin:0 auto;
+				height:80%;
+			}
+			.side-right-list{
+				display:table;
+				height:100%;
+			}
+			#content .content-left{
+				width:250px;
+				height:100%;
+				float:left;
+				background-color:#eee;
+				margin-right:10px;
+			}
+			#content .content-right{
+				width:630px;
+				height:40%;
+				float:right;
+				background-color:#eee;
+				padding-left:10px;
+			}
+			#sidebar-top .side-right-list .clear{
+				padding:0;
+			}
+			#content .content-right h1{
+				font-size:30px;
+				color:#646464;
+			}
+			#content .content-right p{
+				margin:0;
+				color:#646464;
+			}
+			#bottom{
+				height:6%;
+				width:100%;
+				background-color:#333;
+			}
+			#bottom .bottom-cont{
+				width:900px;
+				height:100%;
+				margin:0 auto;
+			}
+			#bottom .bottom-cont ul{
+				height:100%;
+			}
+			#bottom .warp{
+				float: left;
+				height:100%;
+			}
+			#bottom .warp ul{
+				display:table;
+				height:100%;
+			}
+			#bottom .warp ul li{
+				display:table-cell;
+				font-size:15px;
+				color:white;
+				vertical-align:middle;
+				padding-right:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="sidebar-top" class="clearfix">
+
+			<div class="side-content clearfix">
+				<div class="side-left clearfix">
+					<img src="../img/logo-tiny.png"/>
+				</div>
+				<div class="side-right">
+					<ul class="side-right-list clearfix">
+						<li>
+							技能
+						</li>
+						<li>
+							经历
+						</li>
+						<li>
+							关于
+						</li>
+						<li class="clear">
+							作品
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="content" class='clearfix'>
+			<div class="content-left"></div>
+			<div class="content-right">
+				<h1>我的作品</h1>
+				<p>生活很美好</p>
+				<p>心情不错</p>
+				<p>代码写的很漂亮</p>
+			</div>
+		</div>
+		<div id="bottom">
+			<div class="bottom-cont clearfix">
+				<div class="warp">
+					<ul class="clearfix">
+					<li>费月底</li>
+					<li>jsconde</li>
+					<li>jsbin</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

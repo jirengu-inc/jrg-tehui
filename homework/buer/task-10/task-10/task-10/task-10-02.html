@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.first {
+				width: 300px;
+				height: 150px;
+				border: 1px solid #ccc;
+				margin: 40px auto;
+				position: relative;
+			}
+			
+			.first:after {
+				content: '';
+				display: block;
+				width: 0px;
+				height: 0px;
+				border: 10px solid red;
+				border-left-color: transparent;
+				border-top-color: transparent;
+				border-right-color: transparent;
+				border-bottom-color: #ccc;
+				position: absolute;
+				top: -20px;
+				left: 10px;
+			}
+			
+			.send {
+				width: 300px;
+				height: 150px;
+				border: 1px solid #ccc;
+				margin: 40px auto;
+				position: relative;
+			}
+			.send:after{
+				content: '';
+				display: block;
+				width: 0px;
+				height: 0px;
+				border: 10px solid red;
+				border-left-color: transparent;
+				border-top-color: red;
+				border-right-color: red;
+				border-bottom-color: transparent;
+				position:absolute;
+				right:0;
+			}
+			.last{
+				width: 300px;
+				height: 150px;
+				border: 1px solid #ccc;
+				margin: 40px auto;
+				position: relative;
+			}
+			.last:after{
+				content: '';
+				display: block;
+				width: 0px;
+				height: 0px;
+				border: 10px solid red;
+				border-left-color: transparent;
+				border-top-color: transparent;
+				border-right-color: transparent;
+				border-bottom-color: #ccc;
+				position: absolute;
+				top: -20px;
+				left: 10px;
+			}
+			.last:before{
+				content: '';
+				display: block;
+				width: 0px;
+				height: 0px;
+				border: 8px solid red;
+				border-left-color: transparent;
+				border-top-color: transparent;
+				border-right-color: transparent;
+				border-bottom-color:white;
+				position: absolute;
+				top: -15px;
+				left: 12px;
+				z-index:1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="first"></div>
+		<div class="send"></div>
+		<div class="last"></div>
+	</body>
+
+</html>
